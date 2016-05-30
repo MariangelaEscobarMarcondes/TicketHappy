@@ -5,11 +5,13 @@
 	<title>Ticket Happy - Login de usuário</title><!---->
 	<link rel="shortcut icon" href="imagens/logo/favicon.ico" >
 	
-    <!-- Bootstrap -->	
-	<link href="view/css/bootstrap.min.css" rel="stylesheet">
-	<link href="view/css/bootstrap.css" rel="stylesheet">
-	
-	<link href="view/css/principal.css" rel="stylesheet">
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
+
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
+    
+    <link href="css/principal.css" rel="stylesheet">
 
 </head>
 

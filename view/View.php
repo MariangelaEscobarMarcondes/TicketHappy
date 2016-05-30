@@ -8,7 +8,7 @@ class View{
     }
     
     public function interpolar($pagina,$dado){
-        require_once $pagina . ".php";
+        require_once $pagina . ".php" . "DADO: " . $dado;
     }
    
     

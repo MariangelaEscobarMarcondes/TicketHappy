@@ -11,7 +11,7 @@
     <!-- Latest compiled and minified JavaScript -->
     <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
     
-    <link href="principal.css" rel="stylesheet">
+    <link href="css/principal.css" rel="stylesheet">
 	
 </head>
 
