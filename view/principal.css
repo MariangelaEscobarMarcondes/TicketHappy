@@ -524,7 +524,20 @@ main{
 
 /*BOOTSTRAP*/
 
+@media (min-width: 768px) {
+  .navbar {
+    /*border-radius: 4px;*/
+	border-radius: 0px;/*ALTEREI*/
+  }
+}
 
+.breadcrumb {
+  padding: 8px 15px;
+  margin-bottom: 20px;
+  list-style: none;
+  background-color: #000;
+  border-radius: 4px;   
+}
 .breadcrumb > li {
   display: inline-block; 
 }
@@ -538,4 +551,150 @@ main{
 }
 .breadcrumb > .active {
   color: #FFFF00;/* ALTEREI*/
+}
+
+.form-control {
+  display: block;
+  width: 100%;
+  height: 34px;
+  padding: 6px 12px;
+  font-size: 14px;
+  line-height: 1.42857143;
+  color: #555;
+  /*background-color: #fff;*/
+  background-image: none;
+  /*border: 1px solid #ccc;*/
+  border: 1px solid #EEDC82;/* ALTEREI*/
+  border-radius: 5px;
+  -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075);
+          box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075);
+  -webkit-transition: border-color ease-in-out .15s, -webkit-box-shadow ease-in-out .15s;
+       -o-transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
+          transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
+}
+
+.form-control:focus {
+  border-color: #FF8C00;/* alterei */
+   background-color: #fff;/*alterei = nao tinha*/  
+  outline: 0;
+  -webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,.075), 0 0 8px rgba(102, 175, 233, .6);
+          box-shadow: inset 0 1px 1px rgba(0,0,0,.075), 0 0 8px rgba(102, 175, 233, .6);
+}
+.form-control::-moz-placeholder {
+  color: #363636;/* alterei amarelo clarinho*/
+  opacity: 1;
+}
+.form-control:-ms-input-placeholder {
+  color: #363636;/* alterei amarelo clarinho*/
+}
+.form-control::-webkit-input-placeholder {
+  color: #363636;/* alterei amarelo clarinho*/
+}
+
+.dropdown-menu {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  z-index: 1000;
+  display: none;
+  float: left;
+  min-width: 160px;
+  padding: 5px 0;
+  margin: 2px 0 0;
+  font-size: 14px;
+  text-align: left;
+  list-style: none;
+  background-color: #222; /* alterei = fff, fundo de quando abre o dropdown*/  
+  -webkit-background-clip: padding-box;
+          background-clip: padding-box;
+  border: 1px solid #ccc;
+  border: 1px solid rgba(0, 0, 0, .15);
+  border-radius: 4px;
+  -webkit-box-shadow: 0 6px 12px rgba(0, 0, 0, .175);
+          box-shadow: 0 6px 12px rgba(0, 0, 0, .175);
+}
+
+.dropdown-menu > li > a {
+  display: block;
+  padding: 3px 20px;
+  clear: both;
+  font-weight: normal;
+  line-height: 1.42857143;
+  color: #FFFF99;/* alterei cor sem hover*/
+  white-space: nowrap;
+}
+.dropdown-menu > li > a:hover,
+.dropdown-menu > li > a:focus {
+  color: #EEC900;/*alterei */
+  text-decoration: none;
+  background-color: #FFFFE0;/*alterei*/ 
+}
+
+.nav {
+  padding-left: 0;
+  margin-bottom: 0; 
+  list-style: none;
+  
+  position: relative;/* ALTEREI */
+  top: 10px;/* ALTEREI */
+}
+
+.navbar {
+  margin-bottom: 0px;/*ALTEREI*/
+  border-bottom: 1px solid transparent;
+}
+
+.navbar-fixed-top .navbar-collapse,
+.navbar-fixed-bottom .navbar-collapse {
+  /*max-height: 340px;*/
+  max-height: 370px; /* ALTEREI */
+}
+
+.navbar-brand {
+ /* float: left;
+  height: 50px;
+  padding: 15px 15px;
+  font-size: 18px;
+  line-height: 20px;
+  */
+  
+   float: left;
+  height: 70px;/*alterei era 50, muda tamanho do menu*/
+  padding: 5px 15px;/*alterei o primeiro padding de 15 p/ 5*/
+  font-size: 18px;
+  line-height: 20px;
+}
+
+.navbar-form {
+  padding: 10px 15px;
+  margin-top: 18px;/* alterei era 8px*/
+}
+
+.navbar-inverse {
+  background-color: #222;
+  border-color: #080808;
+}
+
+.navbar-inverse .navbar-nav > li > a {
+  color: #FFFF99;/*ALTEREI*/
+}
+.navbar-inverse .navbar-nav > li > a:hover,
+.navbar-inverse .navbar-nav > li > a:focus {
+	/*color: #fff;*/
+  color: #EEEE00;/* alterei = amarelo*/
+  background-color: transparent;
+}
+.navbar-inverse .navbar-nav > .active > a,
+.navbar-inverse .navbar-nav > .active > a:hover,
+.navbar-inverse .navbar-nav > .active > a:focus {
+  color: #fff;
+   color: #FFD700;/* alterei = amarelo*/
+  background-color: #080808;
+}
+
+.navbar-inverse .navbar-nav > .open > a,
+.navbar-inverse .navbar-nav > .open > a:hover,
+.navbar-inverse .navbar-nav > .open > a:focus {
+  color: #EEEE00;/*alterei = muda fonte do menu quando clicado*/
+  background-color: #080808;
 }
