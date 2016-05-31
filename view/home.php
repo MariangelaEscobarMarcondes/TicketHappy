@@ -5,13 +5,9 @@
 	<title>Ticket Happy - Home</title>
 	<link rel="shortcut icon" href="imagens/logo/favicon.ico" >
 	
-    <!-- Latest compiled and minified CSS -->
-    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
-
-    <!-- Latest compiled and minified JavaScript -->
-    <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
-    
-    <link href="principal.css" rel="stylesheet">
+	<link href="css/bootstrap.css" rel="stylesheet">
+	<link href="css/principal.css" rel="stylesheet">
+	
 </head>
 
 <body>
@@ -108,7 +104,7 @@
 				</div>
 				
 				<div class="item">
-				  <img src="imagens/carousel/4-mudanca_de_habito.jpg" alt="...">
+				  <img src="imagens/carousel/carousel2.jpg" alt="...">
 				  <div class="carousel-caption"> 						
 				  </div>
 				</div>
@@ -120,13 +116,13 @@
 				</div>
 				
 				<div class="item">
-				  <img src="imagens/carousel/5-La_Nouba.jpg" alt="...">
+				  <img src="imagens/carousel/mudança_de_habito.jpg" alt="...">
 				  <div class="carousel-caption"> 					
 				  </div>
 				</div>
 				
 				<div class="item">
-				  <img src="imagens/carousel/6-O_teatro_magico.jpg" alt="...">
+				  <img src="imagens/carousel/1-O_teatro_magico.jpg" alt="...">
 				  <div class="carousel-caption"> 					
 				  </div>
 				</div>
@@ -325,22 +321,49 @@
 
         <div class="row">
             <div class="col-sm-6 col-md-3">
-				<div id="meta-3" class="widget widgetFooter widget_meta"><h4 class="widgettitle">Serviços</h4>
+				<div id="meta-3" class="widget widgetFooter widget_meta"><a href="home.html" title="Link para Home"><h4 class="widgettitle">Home</h4></a>
 					<ul>
-						<li><a href="contato.html">Contato</a></li>
-						<li><a href="#">Central de Vendas</a></li>
-						<li><a href="#" title="">Vendas para Grupos</a></li>
-						<li><a href="#" title="">Vendas pela Internet</a></li>
-						<li><a href="#" title="">Vantagens do Sistema</a></li>						
+						<li><a href="contato.html" title="Link para Contato">Contato</a></li>
+						<li><a href="login.html" title="Link para Login">Login</a></li>											
 					</ul>
 				</div>            
+			</div> <!-- end widget1 -->
+			
+			<div class="col-sm-6 col-md-3">
+				<div id="meta-3" class="widget widgetFooter widget_meta"><h4 class="widgettitle">Teatro</h4>
+					<ul>						
+						<li><a href="teatro_musical.html" title="Link para Musical">Musical</a></li>
+						<li><a href="teatro_comedia.html" title="Link para Comédia">Comédia</a></li>
+						<li><a href="teatro_infantil.html" title="Link para Infantil">Infantil</a></li>											
+					</ul>
+				</div>            
+			</div> <!-- end widget1 -->
+			
+			<div class="col-sm-6 col-md-3">
+				<div id="meta-3" class="widget widgetFooter widget_meta"><h4 class="widgettitle">Shows</h4>
+					<ul>
+						<li><a href="shows_nacional.html.html" title="Link para Shows Nacionais">Nacional</a></li>
+						<li><a href="shows_internacional.html" title="Link para Shows Internacionais">Internacional</a></li>																
+					</ul>
+				</div>            
+			</div> <!-- end widget1 -->
+			
+				<div class="col-sm-6 col-md-3">
+				<div id="meta-3" class="widget widgetFooter widget_meta"><a href="festivais.html" title="Link para Festivais"><h4 class="widgettitle">Festivais</h4></a>						
+				</div> <br>
+				<div id="meta-3" class="widget widgetFooter widget_meta"><a href="orquestra_danca.html" title="Link para Orquestra & Dança"><h4 class="widgettitle">Orquestra & Dança</h4></a>					
+				</div> 	<br>
+				<div id="meta-3" class="widget widgetFooter widget_meta"><a href="exposicoes.html" title="Link para Exposições"><h4 class="widgettitle">Exposições</h4></a>					
+				</div> <br>
+				<div id="meta-3" class="widget widgetFooter widget_meta"><a href="especiais.html" title="Link para Especiais"><h4 class="widgettitle">Especiais</h4></a>					
+				</div> 	<br>			
 			</div> <!-- end widget1 -->
 
             <div class="col-sm-6 col-md-3">
               	<div id="recent-posts-3" class="widget widgetFooter widget_recent_entries"><h4 class="widgettitle">Formas de Pagamento</h4>	
 					<div class="form-inline">				
 						<div class="input-group">							
-							<a href="#"><img src="imagens/icones/pagamento.png" alt="Formas de Pagamento" ></a>							
+							<img src="imagens/icones/pagamento.png" alt="Formas de Pagamento" >						
 						</div>
 						
 				</div>
@@ -351,7 +374,7 @@
 				<div id="meta-4" class="widget widgetFooter widget_meta"><h4 class="widgettitle">Certificados de Segurança</h4>		
 					<div class="form-inline">				
 						<div class="input-group">							
-							<a href="#"><img src="imagens/icones/certificados.png" alt="Cerificados de Segurança"></a>							
+							<img src="imagens/icones/certificados.png" alt="Cerificados de Segurança">						
 						</div>
 							
 				</div>
