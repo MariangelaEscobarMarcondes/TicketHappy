@@ -521,3 +521,21 @@ main{
   }
 
 }
+
+/*BOOTSTRAP*/
+
+
+.breadcrumb > li {
+  display: inline-block; 
+}
+.breadcrumb > li > a{ /* CRIEI */
+  color: #FFFF99;
+}
+.breadcrumb > li + li:before {
+  padding: 0 5px;
+  color: #FF8C00; /* ALTEREI*/
+  content: "/\00a0";
+}
+.breadcrumb > .active {
+  color: #FFFF00;/* ALTEREI*/
+}
