@@ -99,7 +99,7 @@
 		<main id="largura_contato_form">
 			<h1>Contato</h1>
 			
-			<form method="post" action="php/valida-dados.php" class="form-horizontal">
+			<form method="POST" action="/contato/inserir" class="form-horizontal">
 			
 				<div class="form-group">
 					<label for="nome" class="col-sm-2 control-label color_label">Nome Completo</label>
@@ -134,7 +134,7 @@
 					
 						<!-- Small modal -->
 						<button type="button" value="Comprar" id="comprar" class="btn btn-laranja" data-toggle="modal" data-target=".bs-example-modal-sm">Enviar</button>
-
+						<input type="text" name="Enviar"/>
 						<div class="modal fade bs-example-modal-sm" tabindex="-1" role="dialog"  aria-hidden="true">
 						  <div class="modal-dialog modal-sm">
 							<div class="modal-content">

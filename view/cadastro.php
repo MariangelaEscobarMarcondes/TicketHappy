@@ -5,13 +5,8 @@
 	<title>Ticket Happy - Cadastro</title>
 	<link rel="shortcut icon" href="imagens/logo/favicon.ico" >
 	
-	<!-- Latest compiled and minified CSS -->
-    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
-
-    <!-- Latest compiled and minified JavaScript -->
-    <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
-    
-    <link href="principal.css" rel="stylesheet">
+	<link href="css/bootstrap.css" rel="stylesheet">
+	<link href="css/principal.css" rel="stylesheet">
 	
 </head>
 
@@ -97,114 +92,126 @@
 		
 		<!-- MAIN -->
 		<main id="largura_contato_form">
+		
 			<h2>Dados Pessoais</h2>
 			
-	<form method="post" action="/cadastro/inserir" class="form-horizontal">
-				
+			<form method="post" action="/cadastro/inserir" class="form-horizontal">
 			
-		<div class="form-group">
-			<label for="nome" class="col-sm-2 control-label color_label">*Nome Completo</label>
-		        <div class="col-sm-9">
+				<div class="form-group">
+					<label for="nome" class="col-sm-2 control-label color_label">Nome Completo</label>
+					<div class="col-sm-10">
 					  <input type="text" name="nome" id="nome" class="form-control" size="55" maxlength="50" placeholder="Nome Completo" required>
 					</div>		
-				</div>				
+				</div>	
+
+				<div class="form-group">
+					<label for="cpf" class="col-sm-2 control-label color_label">CPF</label>
+					<div class="col-sm-4">
+						<input type="text" name="cpf" class="form-control" id="cpf" placeholder="123.456.789-00" required>
+					</div>
+					
+					<label for="dt_nasc" class="col-sm-2 control-label color_label">Data de Nascimento</label>
+					<div class="col-sm-4">
+						<input type="text" name="dt_nasc" class="form-control" id="dt_nasc" placeholder="00/00/0000" required>
+					</div>
+				</div>	
+				
 				
 				<div class="form-group">
-					<label for="cpf" class="col-sm-2 control-label color_label">*CPF</label>
-					<div class="col-sm-3">
-						<input type="text" name="cpf" id="cpf" class="form-control" placeholder="123.456.789-00">
-					</div>	
-						
-					<label for="dt_nasc" class="col-sm-3 control-label color_label">*Data de Nascimento</label>
-					<div class="col-sm-3">
-						<input type="text" name="dt_nasc" id="dt_nasc" class="form-control" placeholder="00/00/0000">
-					</div>						
-				</div>					  			
-				
-				<div class="form-group">
-					<label for="telefone" class="col-sm-2 control-label color_label">*Telefone</label>
-					<div class="col-sm-3">
+					<label for="telefone" class="col-sm-2 control-label color_label">Telefone</label>
+					<div class="col-sm-4">
 					  <input type="text" name="telefone" id="telefone" class="form-control" placeholder="(00)1234-5678">
 					</div>	
 
-					<label for="celular" class="col-sm-3 control-label color_label">Celular</label>
-					<div class="col-sm-3">
+					<label for="celular" class="col-sm-2 control-label color_label">Celular</label>
+					<div class="col-sm-4">
 					  <input type="text" name="celular" id="celular" class="form-control" placeholder="(00)12345-6789">
 					</div>
 				</div>
 						
 				<div class="form-group">
-				<label  class="col-sm-2 control-label color_label">*Sexo</label>
-						<label class="radio-inline color_label"><input type="radio" name="sexo" id="f" value="f" checked>Feminino</label>					
-						<label class="radio-inline color_label"><input type="radio" name="sexo" id="m" value="m">Masculino</label>
-					</fieldset>
+					<label  class="col-sm-2 control-label color_label">Sexo</label>
+					<div class="col-sm-9">
+						<label for="feminino" class="radio-inline col-sm-2 control-label color_label">Feminino</label>
+						<div class="col-sm-2">
+							<input type="radio" name="feminino" id="feminino" value="f" checked>
+						</div>
+					
+						<label for="masculino" class="radio-inline col-sm-2 control-label color_label">Maculino</label>
+						<div class="col-sm-2">
+							<input type="radio" name="masculino" id="masculino" value="m">
+						</div>	
+					</div>
 				</div>
 				
 				<h2>Dados de Acesso</h2>
 				
 				<div class="form-group">
-					<label for="Email" class="col-sm-2 control-label color_label">*Email</label>
+					<label for="Email" class="col-sm-2 control-label color_label">Email</label>
 					<div class="col-sm-10">
 						<input type="email" class="form-control" id="Email" placeholder="email@exemplo.com.br" required>
 					</div>
 				</div>
 				
 				<div class="form-group">
-					<label for="confirmaEmail" class="col-sm-2 control-label color_label">*Cofirmar Email</label>
+					<label for="confirmaEmail" class="col-sm-2 control-label color_label">Cofirmar Email</label>
 					<div class="col-sm-10">
 						<input type="email" class="form-control" id="confirmaEmail" placeholder="email@exemplo.com.br" required>
 					</div>
 				</div>
 				 
 				<div class="form-group">
-					<label for="senha" class="col-sm-2 control-label color_label">*Senha</label>
+					<label for="senha" class="col-sm-2 control-label color_label">Senha</label>
 					<div class="col-sm-4">
 						<input type="password" class="form-control" id="senha" placeholder="Password" required>
 					</div>
-				
-					<label for="confirmasenha" class="col-sm-2 control-label color_label">*Cofirmar Senha</label>
+					
+					<label for="confirmasenha" class="col-sm-2 control-label color_label">Cofirmar Senha</label>
 					<div class="col-sm-4">
 						<input type="password" class="form-control" id="confirmasenha" placeholder="Password" required>
 					</div>
 				</div>				
 				
 				
-				<h2>Endereço de Contato</h2>				
+				<h2>Endereço de Contato</h2>	
+										
 				
 				<div class="form-group">
-					<label for="endereco" class="col-sm-2 control-label color_label">*Endereço</label>
+					<label for="endereco" class="col-sm-2 control-label color_label">Endereço</label>
 					<div class="col-sm-10">
 					  <input type="text" name="endereco" id="endereco" class="form-control" placeholder="Endereço" required>
 					</div>		
 				</div>
-				
-				<div class="form-group">
-						<label for="numero" class="col-sm-2 control-label color_label">*Número</label>
-					<div class="col-sm-2">
-					  <input type="text" name="numero" id="numero" class="form-control"  placeholder="Número" required>
-					</div>	
-					
-					<label for="complemento" class="col-sm-2 control-label color_label">Compelmento</label>
-					<div class="col-sm-6">
-					  <input type="text" name="compelmento" id="compelmento" class="form-control" placeholder="Complemento" required>
-					</div>	
-				</div>
 		  		
 				<div class="form-group">
-					<label for="bairro" class="col-sm-2 control-label color_label">*Bairro</label>
-					<div class="col-sm-6">
-					  <input type="text" name="bairro" id="bairro" class="form-control"  placeholder="Bairro" required>
+					<label for="numero" class="col-sm-2 control-label color_label">Número</label>
+					<div class="col-sm-4">
+					  <input type="text" name="numero" id="numero" class="form-control"  placeholder="Número" required>
+					</div>	
+
+					<label for="apto" class="col-sm-2 control-label color_label">Apartamento</label>
+					<div class="col-sm-4">
+					  <input type="text" name="apto" id="apto" class="form-control"  placeholder="Apartamento">
 					</div>	
 				</div>
 				
 				<div class="form-group">
-					<label for="cidade" class="col-sm-2 control-label color_label">*Cidade</label>
-					<div class="col-sm-4">
+					<label for="bairro" class="col-sm-2 control-label color_label">Bairro</label>
+					<div class="col-sm-10">
+					  <input type="text" name="bairro" id="bairro" class="form-control" placeholder="Bairro" required>
+					</div>		
+				</div>
+				
+				
+				
+				<div class="form-group">
+					<label for="cidade" class="col-sm-2 control-label color_label">Cidade</label>
+					<div class="col-sm-5">
 					  <input type="text" name="cidade" id="cidade" class="form-control" placeholder="Cidade" required>
 					</div>	
 
-					<label for="nome" class="col-sm-2 control-label color_label">*Estado</label>					
-					<div class="col-sm-2">
+					<label for="nome" class="col-sm-2 control-label color_label">Estado</label>					
+					<div class="col-sm-3">
 					<select class="form-control">
 					  <option>AC</option>
 					  <option>AL</option>
@@ -239,12 +246,13 @@
 				
 				
 				<div class="form-group">
-					<label for="nome" class="col-sm-2 control-label color_label">*CEP</label>
+					<label for="nome" class="col-sm-2 control-label color_label">CEP</label>
 					<div class="col-sm-4">
 					  <input type="text" name="cep" id="cep" class="form-control" maxlength="9"  pattern="[0-9]{5}-[0-9]{3}" placeholder="11111-111" required>					  
 					</div>		
 				</div>
 				
+			
 				
 				
 				<div class="form-group">
@@ -288,8 +296,7 @@
 		<div style="clear: both"></div>
 	</div>
 	
-	
-	<!-- FOOTER -->
+		<!-- FOOTER -->
 	 <footer id="footer" class="clearfix">
       <div id="footer-widgets">
 
@@ -299,22 +306,50 @@
 
         <div class="row">
             <div class="col-sm-6 col-md-3">
-				<div id="meta-3" class="widget widgetFooter widget_meta"><h4 class="widgettitle">Serviços</h4>
+				<div id="meta-3" class="widget widgetFooter widget_meta"><a href="home.html" title="Link para Home"><h4 class="widgettitle">Home</h4></a>
 					<ul>
-						<li><a href="contato.html">Contato</a></li>
-						<li><a href="#">Central de Vendas</a></li>
-						<li><a href="#" title="">Vendas para Grupos</a></li>
-						<li><a href="#" title="">Vendas pela Internet</a></li>
-						<li><a href="#" title="">Vantagens do Sistema</a></li>						
+						<li><a href="contato.html" title="Link para Contato">Contato</a></li>
+						<li><a href="login.html" title="Link para Login">Login</a></li>	
+						<li><a href="cadastro.html" title="Link para Login">Cadastro</a></li>	
 					</ul>
 				</div>            
+			</div> <!-- end widget1 -->
+			
+			<div class="col-sm-6 col-md-3">
+				<div id="meta-3" class="widget widgetFooter widget_meta"><h4 class="widgettitle">Teatro</h4>
+					<ul>						
+						<li><a href="teatro_musical.html" title="Link para Musical">Musical</a></li>
+						<li><a href="teatro_comedia.html" title="Link para Comédia">Comédia</a></li>
+						<li><a href="teatro_infantil.html" title="Link para Infantil">Infantil</a></li>											
+					</ul>
+				</div>            
+			</div> <!-- end widget1 -->
+			
+			<div class="col-sm-6 col-md-3">
+				<div id="meta-3" class="widget widgetFooter widget_meta"><h4 class="widgettitle">Shows</h4>
+					<ul>
+						<li><a href="shows_nacional.html.html" title="Link para Shows Nacionais">Nacional</a></li>
+						<li><a href="shows_internacional.html" title="Link para Shows Internacionais">Internacional</a></li>																
+					</ul>
+				</div>            
+			</div> <!-- end widget1 -->
+			
+				<div class="col-sm-6 col-md-3">
+				<div id="meta-3" class="widget widgetFooter widget_meta"><a href="festivais.html" title="Link para Festivais"><h4 class="widgettitle">Festivais</h4></a>						
+				</div> <br>
+				<div id="meta-3" class="widget widgetFooter widget_meta"><a href="orquestra_danca.html" title="Link para Orquestra & Dança"><h4 class="widgettitle">Orquestra & Dança</h4></a>					
+				</div> 	<br>
+				<div id="meta-3" class="widget widgetFooter widget_meta"><a href="exposicoes.html" title="Link para Exposições"><h4 class="widgettitle">Exposições</h4></a>					
+				</div> <br>
+				<div id="meta-3" class="widget widgetFooter widget_meta"><a href="especiais.html" title="Link para Especiais"><h4 class="widgettitle">Especiais</h4></a>					
+				</div> 	<br>			
 			</div> <!-- end widget1 -->
 
             <div class="col-sm-6 col-md-3">
               	<div id="recent-posts-3" class="widget widgetFooter widget_recent_entries"><h4 class="widgettitle">Formas de Pagamento</h4>	
 					<div class="form-inline">				
 						<div class="input-group">							
-							<a href="#"><img src="imagens/icones/pagamento.png" alt="Formas de Pagamento" ></a>							
+							<img src="imagens/icones/pagamento.png" alt="Formas de Pagamento" >						
 						</div>
 						
 				</div>
@@ -325,7 +360,7 @@
 				<div id="meta-4" class="widget widgetFooter widget_meta"><h4 class="widgettitle">Certificados de Segurança</h4>		
 					<div class="form-inline">				
 						<div class="input-group">							
-							<a href="#"><img src="imagens/icones/certificados.png" alt="Cerificados de Segurança"></a>							
+							<img src="imagens/icones/certificados.png" alt="Cerificados de Segurança">						
 						</div>
 							
 				</div>
@@ -375,7 +410,7 @@
 
     </footer> <!-- end footer -->
 	<!-- FOOTER -->
-
+	
 	
 	
 </div><!-- WRAPPER -->
