@@ -11,7 +11,7 @@
     <!-- Latest compiled and minified JavaScript -->
     <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
     
-    <link href="principal.css" rel="stylesheet">
+    <link href="css/principal.css" rel="stylesheet">
 
 </head>
 
@@ -146,27 +146,7 @@
 					
 					<div class="col-sm-offset-1 col-sm-10">			
 					
-						<!-- Small modal -->
-
-						<value="Enviar" id="enviar" class="btn btn-laranja" data-toggle="modal" data-target=".bs-example-modal-sm">Enviar</button>
-						<input type="submit" value="OK"/>
-						<div class="modal fade bs-example-modal-sm" tabindex="-1" role="dialog"  aria-hidden="true">
-						  <div class="modal-dialog modal-sm">
-							<div class="modal-content">							
-								<div class="modal-header">								 
-								  <a href="home.html"><span aria-hidden="true" class="glyphicon glyphicon-remove"></span></a>								 
-								</div>								
-								<div class="modal-body">
-									<div class="container-fluid">
-										<div class="row">
-										<p><span class="glyphicon glyphicon-ok"></span>  Logado com sucesso !!!</p>							 
-										</div>
-									</div>
-								</div>
-							
-							</div>
-						  </div>
-						</div>
+						<input type="submit" class="btn btn-laranja" value="Enviar">
 						
 					</div>
 				</div>
@@ -188,7 +168,8 @@
 	</div><!-- CONTENT -->
 		
 
-	<!-- FOOTER -->
+		<!------------------------------------------------ FOOTER --------------------------------------------------------------->
+		
 	 <footer id="footer" class="clearfix">
       <div id="footer-widgets">
 
@@ -198,19 +179,67 @@
 
         <div class="row">
             <div class="col-sm-6 col-md-3">
-				<div id="meta-3" class="widget widgetFooter widget_meta"><h4 class="widgettitle">Serviços</h4>
+				<div id="meta-3" class="widget widgetFooter widget_meta"><a href="home.html" title="Link para Home"><h4 class="widgettitle">Home</h4></a>
 					<ul>
-						<li><a href="contato.html">Contato</a></li>
-						<li><a href="#">Central de Vendas</a></li>
-						<li><a href="#" title="">Vendas para Grupos</a></li>
-						<li><a href="#" title="">Vendas pela Internet</a></li>
-						<li><a href="#" title="">Vantagens do Sistema</a></li>						
+						<li><a href="contato.html" title="Link para Contato">Contato</a></li>
+						<li><a href="login.html" title="Link para Login">Login</a></li>											
 					</ul>
 				</div>            
 			</div> <!-- end widget1 -->
+			
+			<div class="col-sm-6 col-md-3">
+				<div id="meta-3" class="widget widgetFooter widget_meta"><h4 class="widgettitle">Teatro</h4>
+					<ul>						
+						<li><a href="teatro_musical.html" title="Link para Musical">Musical</a></li>
+						<li><a href="teatro_comedia.html" title="Link para Comédia">Comédia</a></li>
+						<li><a href="teatro_infantil.html" title="Link para Infantil">Infantil</a></li>											
+					</ul>
+				</div>            
+			</div> <!-- end widget1 -->
+			
+			<div class="col-sm-6 col-md-3">
+				<div id="meta-3" class="widget widgetFooter widget_meta"><h4 class="widgettitle">Shows</h4>
+					<ul>
+						<li><a href="shows_nacional.html.html" title="Link para Shows Nacionais">Nacional</a></li>
+						<li><a href="shows_internacional.html" title="Link para Shows Internacionais">Internacional</a></li>																
+					</ul>
+				</div>            
+			</div> <!-- end widget1 -->
+			
+				<div class="col-sm-6 col-md-3">
+				<div id="meta-3" class="widget widgetFooter widget_meta"><a href="festivais.html" title="Link para Festivais"><h4 class="widgettitle">Festivais</h4></a>						
+				</div> <br>
+				<div id="meta-3" class="widget widgetFooter widget_meta"><a href="orquestra_danca.html" title="Link para Orquestra & Dança"><h4 class="widgettitle">Orquestra & Dança</h4></a>					
+				</div> 	<br>
+				<div id="meta-3" class="widget widgetFooter widget_meta"><a href="exposicoes.html" title="Link para Exposições"><h4 class="widgettitle">Exposições</h4></a>					
+				</div> <br>
+				<div id="meta-3" class="widget widgetFooter widget_meta"><a href="especiais.html" title="Link para Especiais"><h4 class="widgettitle">Especiais</h4></a>					
+				</div> 	<br>			
+			</div> <!-- end widget1 -->
 
-			<!-- 4 -->
             <div class="col-sm-6 col-md-3">
+              	<div id="recent-posts-3" class="widget widgetFooter widget_recent_entries"><h4 class="widgettitle">Formas de Pagamento</h4>	
+					<div class="form-inline">				
+						<div class="input-group">							
+							<img src="imagens/icones/pagamento.png" alt="Formas de Pagamento" >						
+						</div>
+						
+				</div>
+				</div>           
+			</div> <!-- end widget1 -->
+
+            <div class="col-sm-6 col-md-3">
+				<div id="meta-4" class="widget widgetFooter widget_meta"><h4 class="widgettitle">Certificados de Segurança</h4>		
+					<div class="form-inline">				
+						<div class="input-group">							
+							<img src="imagens/icones/certificados.png" alt="Cerificados de Segurança">						
+						</div>
+							
+				</div>
+				</div>           
+			</div> <!-- end widget1 -->
+			<!-- 4 -->
+             <div class="col-sm-6 col-md-3">
 				<div id="search-3" class="widget widgetFooter widget_search"><h4 class="widgettitle">Mídias Sociais</h4>
 				<div class="form-inline">				
 						<div class="input-group">							
@@ -252,7 +281,9 @@
 		</div>
 
     </footer> <!-- end footer -->
-	<!-- FOOTER -->
+    
+	<!---------------------------------------------- FOOTER ------------------------------------------------------------------------>
+		
 
 
 </div><!--Wrapper -->
