@@ -46,36 +46,28 @@ class ContatoController extends Controller{
     
     
     public function listar(){
-        //$id = $_GET["arg0"];
         
-        //$id = $_POST["id"];
-        
-        //PEGANDO DADOS DO MODEL
         $contatoDao = new ContatoDAO();
-        $contatos = $contatoDao->getAllContatos();
-      
-        // MANDANDO PARA VIEW
-        $dado["nomeCompleto"] = $contatos->getNomeCompleto();
-        $dado["email"]        = $contatos->getEmail();
-        $dado["assunto"]      = $contatos->getAssunto();
-        $dado["mensagem"]     = $contatos->getMensagem();
         
-        $this->view->interpolar("listar",$dado);
-       
+        $todosContatos = $contatoDao->getContatos();
+        
+        $this->view->interpolar("listar_contato",$todosContatos);
     }
-    //https://ticket-happy-mariangela.c9users.io/contato/listar/1
     
     public function alterar(){
         $id = $_GET["arg0"];
         
+        $contatoDao = new ContatoDAO();
         
     }
     
     public function deletar(){
-        $id = $_GET["arg0"];
+        $id = $_GET["arg0"]; //pega id via url
        
         $contatoDao = new ContatoDAO();
         $contatoDao->deleteContato($id);
+        
+        $this->view->renderizar("/contato/listar"); 
          
     }
     
