@@ -1,84 +1,5 @@
-<!DOCTYPE html>
-<html>
-<head>
-	<meta charset="utf-8">
-	<title>Ticket Happy - Home</title>
-	<link rel="shortcut icon" href="imagens/logo/favicon.ico" >
-	
-	<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
-	<script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
-	<style>
-    	<?php include 'static/css/principal.css'; ?>
-	</style>
-</head>
 
-<body>
-	<div id="wrapper">
-		
-		<!-- NAVBAR => BOOSTRAP -->
-		<nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
-			<div class="container-fluid">
-				<!-- Brand and toggle get grouped for better mobile display -->
-				<div class="navbar-header">
-				  <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-					<span class="sr-only">Toggle navigation</span>
-					<span class="icon-bar"></span>
-					<span class="icon-bar"></span>
-					<span class="icon-bar"></span>
-				  </button>
-				 
-				  <a class="navbar-brand" href="home.html">
-					<img alt="Brand" src="imagens/logo/2.png" class="img_logo">
-				  </a>
-				</div>
-
-				<!-- MENU -->
-				<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-					<ul class="nav navbar-nav teste2">
-						<li><a href="/home/home"><span class="glyphicon glyphicon-home"></span> Home</a></li>
-						
-						<li class="dropdown">
-						  <a href="#" class="dropdown-toggle" data-toggle="dropdown"><span class="glyphicon glyphicon-triangle-bottom"></span> Teatro</a>
-						  <ul class="dropdown-menu" role="menu">
-							<li><a href="/home/musical">Musical</a></li>
-							<li><a href="/home/comedia">Comédia</a></li>
-							<li><a href="/home/infantil">Infantil</a></li>										
-						  </ul>
-						</li>
-						<li class="dropdown">
-						  <a href="#" class="dropdown-toggle" data-toggle="dropdown"><span class="glyphicon glyphicon-triangle-bottom"></span> Shows</a>
-						  <ul class="dropdown-menu" role="menu">
-							<li><a href="/home/nacional">Nacional</a></li>
-							<li><a href="/home/internacional">Internacional</a></li>
-						  </ul>
-						</li>
-						
-						<li><a href="/home/festivais"><span class="glyphicon glyphicon-triangle-right"></span>Festivais</a></li>
-						<li><a href="/home/orquestraEdanca"><span class="glyphicon glyphicon-triangle-right"></span>Orquestra & Dança</a></li>
-						<li><a href="/home/exposicoes"><span class="glyphicon glyphicon-triangle-right"></span>Exposições</a></li>
-						<li><a href="/home/especiais"><span class="glyphicon glyphicon-triangle-right"></span>Especiais</a></li>
-						
-					</ul>
-				  
-				   <!-- LOGIN -->	
-				  <ul class="nav navbar-nav navbar-right teste2">
-					<li><a href="/login/formulario"><span class="glyphicon glyphicon-user"></span> Login</a></li>					
-				  </ul>
-				  
-				  <!-- FORM => SEARCH -->
-				  <form class="navbar-form navbar-right teste" role="search">
-					<div class="form-group">				  
-					  <input type="text" class="form-control cor_search" placeholder="Digite...">
-					</div>				
-					<button type="submit" class="btn btn-search"><span class="glyphicon glyphicon-search"></span></button>
-				  </form>
-				  
-				 
-				</div><!-- /.navbar-collapse -->
-		  </div><!-- /.container-fluid -->
-		</nav>
-		<!-- NAVBAR => BOOSTRAP -->
-		
+	<!----------------------------------------- Header -------------------------------->	
 		<div id="content">
 			
 			<!-- CAROUSEL => BOOSTRAP -->
@@ -100,37 +21,37 @@
 			  <div class="carousel-inner" role="listbox">
 			  
 				<div class="item active">
-				  <img src="imagens/carousel/1-coldplay.jpg" alt="...">
+				  <img src="https://ticket-happy-mariangela.c9users.io/imagens/carousel/1-coldplay.jpg" alt="...">
 				  <div class="carousel-caption">					
 				  </div>
 				</div>
 				
 				<div class="item">
-				  <img src="imagens/carousel/carousel2.jpg" alt="...">
+				  <img src="https://ticket-happy-mariangela.c9users.io/imagens/carousel/5-La_Nouba.jpg" alt="...">
 				  <div class="carousel-caption"> 						
 				  </div>
 				</div>
 				
 				<div class="item">
-				  <img src="imagens/carousel/2-Rei_Leao.jpg" alt="...">
+				  <img src="https://ticket-happy-mariangela.c9users.io/imagens/carousel/2-Rei_Leao.jpg" alt="...">
 				  <div class="carousel-caption"> 					
 				  </div>
 				</div>
 				
 				<div class="item">
-				  <img src="imagens/carousel/mudança_de_habito.jpg" alt="...">
+				  <img src="https://ticket-happy-mariangela.c9users.io/imagens/carousel/4-mudanca_de_habito.jpg" alt="...">
 				  <div class="carousel-caption"> 					
 				  </div>
 				</div>
 				
 				<div class="item">
-				  <img src="imagens/carousel/1-O_teatro_magico.jpg" alt="...">
+				  <img src="https://ticket-happy-mariangela.c9users.io/imagens/carousel/6-O_teatro_magico.jpg" alt="...">
 				  <div class="carousel-caption"> 					
 				  </div>
 				</div>
 				
 				<div class="item">
-				  <img src="imagens/carousel/3-Bolshoi.jpg" alt="...">
+				  <img src="https://ticket-happy-mariangela.c9users.io/imagens/carousel/3-Bolshoi.jpg" alt="...">
 				  <div class="carousel-caption"> 					
 				  </div>
 				</div>
@@ -163,7 +84,7 @@
 				<div class="row">
 					  <div class="col-sm-6 col-md-4">
 						<div class="thumbnail sombra">
-						  <img src="imagens/2-shows/Nacional/4.jpg" alt="foto do cartaz do espetáculo O Teatro Mágico" class="img-responsive">
+						  <img src="https://ticket-happy-mariangela.c9users.io/imagens/2-shows/Nacional/4.jpg" alt="foto do cartaz do espetáculo O Teatro Mágico" class="img-responsive">
 						  <div class="caption">
 							<h3>O Teatro Mágico</h3>
 							<p class="texto_centralizado">Centro Cultural Banco do Brasil</p>
@@ -179,7 +100,7 @@
 				  
 					<div class="col-sm-6 col-md-4">
 						<div class="thumbnail sombra">
-						  <img src="imagens/4-orquestra_danca/lago_dos_cisnes/3.jpg" alt="foto do cartaz do espetáculo de ballet O Lago dos Cisnes" class="img-responsive">
+						  <img src="https://ticket-happy-mariangela.c9users.io/imagens/4-orquestra_danca/lago_dos_cisnes/3.jpg" alt="foto do cartaz do espetáculo de ballet O Lago dos Cisnes" class="img-responsive">
 						  <div class="caption">
 							<h3>O Lago dos Cisnes</h3>
 							<p class="texto_centralizado">Centro Deborah Colker</p>
@@ -195,7 +116,7 @@
 					  
 					<div class="col-sm-6 col-md-4">
 						<div class="thumbnail sombra">
-						  <img src="imagens/2-shows/Internacional/6.jpg" alt="foto do cartaz do show Black Eyed Peas" class="img-responsive">
+						  <img src="https://ticket-happy-mariangela.c9users.io/imagens/2-shows/internacional/6.jpg" alt="foto do cartaz do show Black Eyed Peas" class="img-responsive">
 						  <div class="caption">
 							<h3>Black Eyed Peas</h3>
 							<p class="texto_centralizado">Marina Park</p>
@@ -211,7 +132,7 @@
 					  
 					<div class="col-sm-6 col-md-4">
 						<div class="thumbnail sombra">
-						  <img src="imagens/6-especiais/4.jpg" alt="foto do cartaz do Blue Man Group" class="img-responsive">
+						  <img src="https://ticket-happy-mariangela.c9users.io/imagens/6-especiais/4.jpg" alt="foto do cartaz do Blue Man Group" class="img-responsive">
 						  <div class="caption">
 							<h3>Blue Man Group</h3>
 							<p class="texto_centralizado">Teatro Polytheama</p>
@@ -227,7 +148,7 @@
 				  
 					<div class="col-sm-6 col-md-4 ">
 						<div class="thumbnail sombra">
-						  <img src="imagens/5-exposicoes/castelo/1.jpg" alt="foto do cartaz da exposição do Castelo Rá-Tim-Bum" class="img-responsive">
+						  <img src="https://ticket-happy-mariangela.c9users.io/imagens/5-exposicoes/Castelo/1.jpg" alt="foto do cartaz da exposição do Castelo Rá-Tim-Bum" class="img-responsive">
 						  <div class="caption">
 							<h3>Castelo Rá-tim-bum</h3>
 							<p class="texto_centralizado">MIS</p>
@@ -243,7 +164,7 @@
 					
 					<div class="col-sm-6 col-md-4">
 						<div class="thumbnail sombra">
-						  <img src="imagens/1-teatro/Infantil/6.jpg" alt="foto do cartaz da peça Shrek o musical" class="img-responsive">
+						  <img src="https://ticket-happy-mariangela.c9users.io/imagens/1-teatro/Infantil/6.jpg" alt="foto do cartaz da peça Shrek o musical" class="img-responsive">
 						  <div class="caption">
 							<h3>Shrek - O Musical</h3>
 							<p class="texto_centralizado">Teatro Sesiminas</p>
@@ -267,7 +188,7 @@
 							<h4 class="modal-title" id="myModalLabel"><span class="glyphicon glyphicon-wrench"></span>  Ops...</h4>
 						  </div>
 						  <div class="modal-body">
-							<img src="imagens/pagina_em_construcao.png" alt="" class="img-responsive">
+							<img src="https://ticket-happy-mariangela.c9users.io/imagens/pagina_em_construcao.png" alt="" class="img-responsive">
 						  </div>
 						  <div class="modal-footer">
 							<button type="button" class="btn btn-laranja" data-dismiss="modal">Close</button>					
@@ -287,21 +208,21 @@
 				<h3>Destaques</h3>				
 
 				<div class="hoverzoom">				
-					<img src="imagens/aside/la_nouba.jpg" class="img-responsive" alt="">
+					<img src="https://ticket-happy-mariangela.c9users.io/imagens/aside/la_nouba.jpg" class="img-responsive" alt="">
 					<div class="retina">						
 						<a href="la_nouba.html">Saiba mais</a>
 					</div>
 				</div><br>
 				
 				<div class="hoverzoom">
-					<img src="imagens/aside/rei-leao.jpg" class="img-responsive" alt="">
+					<img src="https://ticket-happy-mariangela.c9users.io/imagens/aside/rei-leao.jpg" class="img-responsive" alt="">
 					<div class="retina">						
 						<a href="o_rei_leao.html">Saiba mais</a>
 					</div>
 				</div><br>
 				
 				<div class="hoverzoom">
-					<img src="imagens/aside/coldplay.jpg"  class="img-responsive" alt="">
+					<img src="https://ticket-happy-mariangela.c9users.io/imagens/aside/coldplay.jpg"  class="img-responsive" alt="">
 					<div class="retina">						
 						<a href="Coldplay.html">Saiba mais</a>
 					</div>
@@ -313,129 +234,7 @@
 			<div style="clear: both"></div>
 		
 		</div><!-- CONTENT -->
-		<!-- FOOTER -->
-	 <footer id="footer" class="clearfix">
-      <div id="footer-widgets">
 
-        <div class="container">
-
-        <div id="footer-wrapper">
-
-        <div class="row">
-            <div class="col-sm-6 col-md-3">
-				<div id="meta-3" class="widget widgetFooter widget_meta"><a href="/home/home" title="Link para Home"><h4 class="widgettitle">Home</h4></a>
-					<ul>
-						<li><a href="/contato/cadastroContato" title="Link para Contato">Contato</a></li>
-						<li><a href="/login/formulario" title="Link para Login">Login</a></li>											
-					</ul>
-				</div>            
-			</div> <!-- end widget1 -->
-			
-			<div class="col-sm-6 col-md-3">
-				<div id="meta-3" class="widget widgetFooter widget_meta"><h4 class="widgettitle">Teatro</h4>
-					<ul>						
-						<li><a href="/home/musical" title="Link para Musical">Musical</a></li>
-						<li><a href="/home/comedia" title="Link para Comédia">Comédia</a></li>
-						<li><a href="/home/infantil" title="Link para Infantil">Infantil</a></li>											
-					</ul>
-				</div>            
-			</div> <!-- end widget1 -->
-			
-			<div class="col-sm-6 col-md-3">
-				<div id="meta-3" class="widget widgetFooter widget_meta"><h4 class="widgettitle">Shows</h4>
-					<ul>
-						<li><a href="/home/nacional" title="Link para Shows Nacionais">Nacional</a></li>
-						<li><a href="/home/internacional" title="Link para Shows Internacionais">Internacional</a></li>																
-					</ul>
-				</div>            
-			</div> <!-- end widget1 -->
-			
-				<div class="col-sm-6 col-md-3">
-				<div id="meta-3" class="widget widgetFooter widget_meta"><a href="/home/festivais" title="Link para Festivais"><h4 class="widgettitle">Festivais</h4></a>						
-				</div> <br>
-				<div id="meta-3" class="widget widgetFooter widget_meta"><a href="/home/orquestraEdanca" title="Link para Orquestra & Dança"><h4 class="widgettitle">Orquestra & Dança</h4></a>					
-				</div> 	<br>
-				<div id="meta-3" class="widget widgetFooter widget_meta"><a href="/home/exposicoes" title="Link para Exposições"><h4 class="widgettitle">Exposições</h4></a>					
-				</div> <br>
-				<div id="meta-3" class="widget widgetFooter widget_meta"><a href="/home/especiais" title="Link para Especiais"><h4 class="widgettitle">Especiais</h4></a>					
-				</div> 	<br>			
-			</div> <!-- end widget1 -->
-
-            <div class="col-sm-6 col-md-3">
-              	<div id="recent-posts-3" class="widget widgetFooter widget_recent_entries"><h4 class="widgettitle">Formas de Pagamento</h4>	
-					<div class="form-inline">				
-						<div class="input-group">							
-							<img src="imagens/icones/pagamento.png" alt="Formas de Pagamento" >						
-						</div>
-						
-				</div>
-				</div>           
-			</div> <!-- end widget1 -->
-
-            <div class="col-sm-6 col-md-3">
-				<div id="meta-4" class="widget widgetFooter widget_meta"><h4 class="widgettitle">Certificados de Segurança</h4>		
-					<div class="form-inline">				
-						<div class="input-group">							
-							<img src="imagens/icones/certificados.png" alt="Cerificados de Segurança">						
-						</div>
-							
-				</div>
-				</div>           
-			</div> <!-- end widget1 -->
-			<!-- 4 -->
-             <div class="col-sm-6 col-md-3">
-				<div id="search-3" class="widget widgetFooter widget_search"><h4 class="widgettitle">Mídias Sociais</h4>
-				<div class="form-inline">				
-						<div class="input-group">							
-							<a href="#"><img src="imagens/icones/1.jpg" alt="Imagem icone Facebook"></a>							
-						</div>
-						<div class="input-group">							
-							<a href="#"><img src="imagens/icones/2.jpg" alt="Imagem icone Twitter"></a>								
-						</div>	
-						<div class="input-group">							
-							<a href="#"><img src="imagens/icones/3.jpg" alt="Imagem icone Google +"></a>							
-						</div>
-						<div class="input-group">							
-							<a href="#"><img src="imagens/icones/4.jpg" alt="Imagem icone Youtube"></a>								
-						</div>	
-				</div>
-				</div>          
-			</div> <!-- end 4 -->
-
-          </div> <!-- end .row -->
-
-        </div> <!-- end #footer-wrapper -->
-
-        </div> <!-- end .container -->
-      </div> <!-- end #footer-widgets -->
-
-		<div id="sub-floor">
-			<div class="container">
-				<div class="row">
-					<div class="col-md-4 copyright">
-						tickethappy.com.br 2015 © 
-					</div>	
-
-					<div class="col-md-4 col-md-offset-4 attribution">
-						Desenvolvido por:<a href="#"> DMR</a>	
-					</div>
-
-				</div> <!-- end .row -->
-			</div>
-		</div>
-
-    </footer> <!-- end footer -->
-	<!-- FOOTER -->
-		
-	
-	</div><!-- WRAPPER -->
-	
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
-    <script>
-         <?php include 'static/js/bootstrap.min.js'; ?>
-    </script>
-	
-	
-</body>
-
-</html>
+<!--------------------------------------- FOOTER ----------------------------------------------------->
+<!-- Mari: eu criei um arquivo footer.php para salvar o footer e nao precisar fica em todas as paginas-->
+<!-- assim fica mais facil fazer a manutencao, tentei fazer como o menu mas baguncou tudo -->
