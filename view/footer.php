@@ -51,7 +51,7 @@
               	<div id="recent-posts-3" class="widget widgetFooter widget_recent_entries"><h4 class="widgettitle">Formas de Pagamento</h4>	
 					<div class="form-inline">				
 						<div class="input-group">							
-							<img src="imagens/icones/pagamento.png" alt="Formas de Pagamento" >						
+							<img src="https://ticket-happy-mariangela.c9users.io/imagens/icones/pagamento.png" alt="Formas de Pagamento" >						
 						</div>
 						
 				</div>
@@ -62,7 +62,7 @@
 				<div id="meta-4" class="widget widgetFooter widget_meta"><h4 class="widgettitle">Certificados de Segurança</h4>		
 					<div class="form-inline">				
 						<div class="input-group">							
-							<img src="imagens/icones/certificados.png" alt="Cerificados de Segurança">						
+							<img src="https://ticket-happy-mariangela.c9users.io/imagens/icones/certificados.png" alt="Cerificados de Segurança">						
 						</div>
 							
 				</div>
@@ -73,16 +73,16 @@
 				<div id="search-3" class="widget widgetFooter widget_search"><h4 class="widgettitle">Mídias Sociais</h4>
 				<div class="form-inline">				
 						<div class="input-group">							
-							<a href="#"><img src="imagens/icones/1.jpg" alt="Imagem icone Facebook"></a>							
+							<a href="#"><img src="https://ticket-happy-mariangela.c9users.io/imagens/icones/1.jpg" alt="Imagem icone Facebook"></a>							
 						</div>
 						<div class="input-group">							
-							<a href="#"><img src="imagens/icones/2.jpg" alt="Imagem icone Twitter"></a>								
+							<a href="#"><img src="https://ticket-happy-mariangela.c9users.io/imagens/icones/2.jpg" alt="Imagem icone Twitter"></a>								
 						</div>	
 						<div class="input-group">							
-							<a href="#"><img src="imagens/icones/3.jpg" alt="Imagem icone Google +"></a>							
+							<a href="#"><img src="https://ticket-happy-mariangela.c9users.io/imagens/icones/3.jpg" alt="Imagem icone Google +"></a>							
 						</div>
 						<div class="input-group">							
-							<a href="#"><img src="imagens/icones/4.jpg" alt="Imagem icone Youtube"></a>								
+							<a href="#"><img src="https://ticket-happy-mariangela.c9users.io/imagens/icones/4.jpg" alt="Imagem icone Youtube"></a>								
 						</div>	
 				</div>
 				</div>          
