@@ -22,7 +22,7 @@ class ContatoDAO{
         return "";
     }
     
-    //listar
+    //listar = traz todos os contatos
     public function getContatos(){
         $mysqli = new mysqli("127.0.0.1", "mariangela", "", "ticketHappy");
         
@@ -42,7 +42,7 @@ class ContatoDAO{
     public function deleteContato($id){
         $mysqli = new mysqli("127.0.0.1", "mariangela", "", "ticketHappy");
         
-        $stmt = $mysqli->prepare("DELETE * FROM contatos WHERE id=?");
+        $stmt = $mysqli->prepare("DELETE FROM contatos WHERE id_contato=?");
         
         $stmt->bind_param("i",$id);
         
@@ -50,6 +50,60 @@ class ContatoDAO{
             echo "Erro: (" . $stmt->errno . ") " . $stmt->error . "<br>";
         }
         $stmt->close();
+    }
+    
+    public function getContato($id){
+        $mysqli = new mysqli("127.0.0.1", "mariangela", "", "ticketHappy");
+        
+        $stmt = $mysqli->prepare("SELECT * FROM contatos WHERE id_contato=?");
+        
+        $stmt->bind_param("i",$id);
+        $stmt->execute();
+        $stmt->bind_result($id, $nomeCompleto, $email, $assunto, $mensagem);
+        $stmt->fetch();
+        
+        $contato = new ContatoModel($id, $nomeCompleto, $email, $assunto, $mensagem);
+        return $contato;
+    }
+    
+    public function updateContato(ContatoModel $c){
+        
+        $mysqli = new mysqli("127.0.0.1", "mariangela", "", "ticketHappy");
+      
+        $stmt = $mysqli->prepare("UPDATE contatos SET nm_nomeCompleto = ?,
+                                                      ds_email = ?,
+                                                      ds_assunto = ?,
+                                                      ds_mensagem = ?
+                                                      WHERE id_contato =?");
+        
+        $stmt->bind_param("ssssi",$c->getNomeCompleto(),$c->getEmail(),$c->getAssunto(),$c->getMensagem(),$c->getId());
+       
+       
+       if (!$stmt->execute()) {
+            echo "Erro: (" . $stmt->errno . ") " . $stmt->error . "<br>";
+        }
+        $stmt->close();
+        
+        /*
+        $stmt->bind_result($id, $nomeCompleto, $email, $assunto, $mensagem);
+        $stmt->fetch();
+        
+        $contato = new ContatoModel($id, $nomeCompleto, $email, $assunto, $mensagem);
+        return $contato;
+        */
+        
+        /*
+        $stmt = $mysqli->prepare("UPDATE movies SET filmName = ?,    filmDescription = ?,    filmImage = ?,     filmPrice = ?,     filmReview = ?    WHERE filmID = ?");
+$stmt->bind_param('sssdii',
+   $_POST['filmName'],
+   $_POST['filmDescription'],
+   $_POST['filmImage'],
+   $_POST['filmPrice'], 
+   $_POST['filmReview'],
+   $_POST['filmID']);
+$stmt->execute(); 
+$stmt->close();
+*/
     }
     
     
@@ -83,20 +137,7 @@ class ContatoDAO{
     
     //http://php.net/manual/pt_BR/mysqli-stmt.fetch.php
     
-    public function updateContato($id){
-        
-        $mysqli = new mysqli("127.0.0.1", "mariangela", "", "ticketHappy");
-        
-        $stmt = $mysqli->prepare("PUT INTO contatos(nm_nomeCompleto,ds_email,ds_assunto,ds_mensagem) VALUES (?,?,?,?)");
-        
-        $stmt->bind_param("i",$id);
-        $stmt->execute();
-        $stmt->bind_result($id, $nomeCompleto, $email, $assunto, $mensagem);
-        $stmt->fetch();
-        
-        $contato = new ContatoModel($id, $nomeCompleto, $email, $assunto, $mensagem);
-        return $contato;
-    }
+    
     
    
    
