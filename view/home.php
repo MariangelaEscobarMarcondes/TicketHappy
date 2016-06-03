@@ -5,9 +5,11 @@
 	<title>Ticket Happy - Home</title>
 	<link rel="shortcut icon" href="imagens/logo/favicon.ico" >
 	
-	<link href="css/bootstrap.css" rel="stylesheet">
-	<link href="css/principal.css" rel="stylesheet">
-	
+	<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
+	<script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
+	<style>
+    	<?php include 'static/css/principal.css'; ?>
+	</style>
 </head>
 
 <body>
@@ -33,34 +35,34 @@
 				<!-- MENU -->
 				<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
 					<ul class="nav navbar-nav teste2">
-						<li><a href="home.html"><span class="glyphicon glyphicon-home"></span> Home</a></li>
+						<li><a href="/home/home"><span class="glyphicon glyphicon-home"></span> Home</a></li>
 						
 						<li class="dropdown">
 						  <a href="#" class="dropdown-toggle" data-toggle="dropdown"><span class="glyphicon glyphicon-triangle-bottom"></span> Teatro</a>
 						  <ul class="dropdown-menu" role="menu">
-							<li><a href="teatro_musical.html">Musical</a></li>
-							<li><a href="teatro_comedia.html">Comédia</a></li>
-							<li><a href="teatro_infantil.html">Infantil</a></li>										
+							<li><a href="/home/musical">Musical</a></li>
+							<li><a href="/home/comedia">Comédia</a></li>
+							<li><a href="/home/infantil">Infantil</a></li>										
 						  </ul>
 						</li>
 						<li class="dropdown">
 						  <a href="#" class="dropdown-toggle" data-toggle="dropdown"><span class="glyphicon glyphicon-triangle-bottom"></span> Shows</a>
 						  <ul class="dropdown-menu" role="menu">
-							<li><a href="shows_nacional.html">Nacional</a></li>
-							<li><a href="shows_internacional.html">Internacional</a></li>
+							<li><a href="/home/nacional">Nacional</a></li>
+							<li><a href="/home/internacional">Internacional</a></li>
 						  </ul>
 						</li>
 						
-						<li><a href="festivais.html"><span class="glyphicon glyphicon-triangle-right"></span>Festivais</a></li>
-						<li><a href="orquestra_danca.html"><span class="glyphicon glyphicon-triangle-right"></span>Orquestra & Dança</a></li>
-						<li><a href="exposicoes.html"><span class="glyphicon glyphicon-triangle-right"></span>Exposições</a></li>
-						<li><a href="especiais.html"><span class="glyphicon glyphicon-triangle-right"></span>Especiais</a></li>
+						<li><a href="/home/festivais"><span class="glyphicon glyphicon-triangle-right"></span>Festivais</a></li>
+						<li><a href="/home/orquestraEdanca"><span class="glyphicon glyphicon-triangle-right"></span>Orquestra & Dança</a></li>
+						<li><a href="/home/exposicoes"><span class="glyphicon glyphicon-triangle-right"></span>Exposições</a></li>
+						<li><a href="/home/especiais"><span class="glyphicon glyphicon-triangle-right"></span>Especiais</a></li>
 						
 					</ul>
 				  
 				   <!-- LOGIN -->	
 				  <ul class="nav navbar-nav navbar-right teste2">
-					<li><a href="login.html"><span class="glyphicon glyphicon-user"></span> Login</a></li>					
+					<li><a href="/login/formulario"><span class="glyphicon glyphicon-user"></span> Login</a></li>					
 				  </ul>
 				  
 				  <!-- FORM => SEARCH -->
@@ -321,10 +323,10 @@
 
         <div class="row">
             <div class="col-sm-6 col-md-3">
-				<div id="meta-3" class="widget widgetFooter widget_meta"><a href="home.html" title="Link para Home"><h4 class="widgettitle">Home</h4></a>
+				<div id="meta-3" class="widget widgetFooter widget_meta"><a href="/home/home" title="Link para Home"><h4 class="widgettitle">Home</h4></a>
 					<ul>
-						<li><a href="contato.html" title="Link para Contato">Contato</a></li>
-						<li><a href="login.html" title="Link para Login">Login</a></li>											
+						<li><a href="/contato/cadastroContato" title="Link para Contato">Contato</a></li>
+						<li><a href="/login/formulario" title="Link para Login">Login</a></li>											
 					</ul>
 				</div>            
 			</div> <!-- end widget1 -->
@@ -332,9 +334,9 @@
 			<div class="col-sm-6 col-md-3">
 				<div id="meta-3" class="widget widgetFooter widget_meta"><h4 class="widgettitle">Teatro</h4>
 					<ul>						
-						<li><a href="teatro_musical.html" title="Link para Musical">Musical</a></li>
-						<li><a href="teatro_comedia.html" title="Link para Comédia">Comédia</a></li>
-						<li><a href="teatro_infantil.html" title="Link para Infantil">Infantil</a></li>											
+						<li><a href="/home/musical" title="Link para Musical">Musical</a></li>
+						<li><a href="/home/comedia" title="Link para Comédia">Comédia</a></li>
+						<li><a href="/home/infantil" title="Link para Infantil">Infantil</a></li>											
 					</ul>
 				</div>            
 			</div> <!-- end widget1 -->
@@ -342,20 +344,20 @@
 			<div class="col-sm-6 col-md-3">
 				<div id="meta-3" class="widget widgetFooter widget_meta"><h4 class="widgettitle">Shows</h4>
 					<ul>
-						<li><a href="shows_nacional.html.html" title="Link para Shows Nacionais">Nacional</a></li>
-						<li><a href="shows_internacional.html" title="Link para Shows Internacionais">Internacional</a></li>																
+						<li><a href="/home/nacional" title="Link para Shows Nacionais">Nacional</a></li>
+						<li><a href="/home/internacional" title="Link para Shows Internacionais">Internacional</a></li>																
 					</ul>
 				</div>            
 			</div> <!-- end widget1 -->
 			
 				<div class="col-sm-6 col-md-3">
-				<div id="meta-3" class="widget widgetFooter widget_meta"><a href="festivais.html" title="Link para Festivais"><h4 class="widgettitle">Festivais</h4></a>						
+				<div id="meta-3" class="widget widgetFooter widget_meta"><a href="/home/festivais" title="Link para Festivais"><h4 class="widgettitle">Festivais</h4></a>						
 				</div> <br>
-				<div id="meta-3" class="widget widgetFooter widget_meta"><a href="orquestra_danca.html" title="Link para Orquestra & Dança"><h4 class="widgettitle">Orquestra & Dança</h4></a>					
+				<div id="meta-3" class="widget widgetFooter widget_meta"><a href="/home/orquestraEdanca" title="Link para Orquestra & Dança"><h4 class="widgettitle">Orquestra & Dança</h4></a>					
 				</div> 	<br>
-				<div id="meta-3" class="widget widgetFooter widget_meta"><a href="exposicoes.html" title="Link para Exposições"><h4 class="widgettitle">Exposições</h4></a>					
+				<div id="meta-3" class="widget widgetFooter widget_meta"><a href="/home/exposicoes" title="Link para Exposições"><h4 class="widgettitle">Exposições</h4></a>					
 				</div> <br>
-				<div id="meta-3" class="widget widgetFooter widget_meta"><a href="especiais.html" title="Link para Especiais"><h4 class="widgettitle">Especiais</h4></a>					
+				<div id="meta-3" class="widget widgetFooter widget_meta"><a href="/home/especiais" title="Link para Especiais"><h4 class="widgettitle">Especiais</h4></a>					
 				</div> 	<br>			
 			</div> <!-- end widget1 -->
 
@@ -429,7 +431,9 @@
 	</div><!-- WRAPPER -->
 	
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
-    <script src="js/bootstrap.min.js"></script> 
+    <script>
+         <?php include 'static/js/bootstrap.min.js'; ?>
+    </script>
 	
 	
 </body>
