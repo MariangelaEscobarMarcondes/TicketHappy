@@ -8,8 +8,10 @@
 					<li><a href="#">Teatro</a></li>
 					<li><a href="/home/musical">Musical</a></li>
 					<li class="active">O Rei Leão</li>				
-				</ol>		
+				</ol>
+					
 			</div>
+		
 		<!--------------------------- BREADCRUMB -------------------------------------->
 	
 	<div id="content_imagem_fundo">
@@ -19,7 +21,11 @@
 		<div id="main_content">					
 		
 			<div class="div_transparente">
+				<p style="color:#000">Bem Vindo:  <?= $dado["nome"] ?></p>
+				<p style="display:none">Id:     <?= $dado["id"] ?></p>
+				
 				<h2>O REI LEÃO - O MUSICAL</h2>
+				
 				
 				<p class="texto_justificado">
 				O espetáculo Rei Leão - O Musical, sucesso de bilheteria em 2013, 
