@@ -12,7 +12,8 @@
 				<div id="meta-3" class="widget widgetFooter widget_meta"><a href="/home/home" title="Link para Home"><h4 class="widgettitle">Home</h4></a>
 					<ul>
 						<li><a href="/contato/cadastroContato" title="Link para Contato">Contato</a></li>
-						<li><a href="/login/formulario" title="Link para Login">Login</a></li>											
+						<li><a href="/login/formulario" title="Link para Login">Login</a></li>	
+						<li><a href="/cadastro/cadastro" title="Link para Login">Cadastro</a></li>		
 					</ul>
 				</div>            
 			</div> <!-- end widget1 -->
@@ -51,8 +52,9 @@
               	<div id="recent-posts-3" class="widget widgetFooter widget_recent_entries"><h4 class="widgettitle">Formas de Pagamento</h4>	
 					<div class="form-inline">				
 						<div class="input-group">							
-							<img src="https://ticket-happy-mariangela.c9users.io/imagens/icones/pagamento.png" alt="Formas de Pagamento" >						
+							<img src="https://ticket-happy-mariangela.c9users.io/imagens/cartão.png" alt="Formas de Pagamento" >						
 						</div>
+						
 						
 				</div>
 				</div>           
@@ -117,9 +119,14 @@
 	</div><!-- WRAPPER -->
 	
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+	
+	
     <script>
          <?php include 'static/js/bootstrap.min.js'; ?>
+        
     </script>
+    
+   
 	
 	
 </body>
