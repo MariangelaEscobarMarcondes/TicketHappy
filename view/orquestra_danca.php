@@ -19,6 +19,9 @@
 						<li><a href="/home/home">Home</a></li>
 						<li class="active">Orquestra e Dança</li>				
 					</ol>
+					
+					<p style="color:#FFFF99">Bem Vindo:  <?= $dado["nome"] ?></p>
+					<p style="display:none">Id:     <?= $dado["id"] ?></p>
 				
 				<!------------------------------------------------------------------------------------>		
 				
