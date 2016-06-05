@@ -79,6 +79,8 @@
 				<ol class="breadcrumb">
 					<li class="active">Home</li>				
 				</ol>
+					<p style="color:#FFFF99">Bem Vindo:  <?= $dado["nome"] ?></p>
+					<p style="display:none">Id:     <?= $dado["id"] ?></p>
 				<!-- breadcrumb -->		
 				
 				<div class="row">
