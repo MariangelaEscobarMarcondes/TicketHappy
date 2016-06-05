@@ -21,7 +21,9 @@ class App{
             
         }elseif($modelName == "LoginModel"){
             require_once "model/UsuarioModel.php";
-            require_once "model/UsuarioDAO.php";
+            //require_once "model/UsuarioDAO.php";
+            require_once "model/LoginModel.php";
+            require_once "model/LoginDAO.php";
         }else{
             require_once "model/" . $modelName . ".php";
             require_once "model/" . ucfirst($this->clazz) . "DAO.php";
