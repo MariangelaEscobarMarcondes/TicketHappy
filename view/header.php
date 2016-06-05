@@ -2,14 +2,24 @@
 <html>
 <head>
 	<meta charset="utf-8">
-	<title>Ticket Happy - Home</title>
+	<title>Ticket Happy</title>
 	<link rel="shortcut icon" href="imagens/logo/favicon.ico" >
 	
 	<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
 	<script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
+	
 	<style>
     	<?php include 'static/css/principal.css'; ?>
 	</style>
+	
+	<!-- Usando máscaras com jquery -->
+	<script>
+            <?php include 'static/js/jquery.mask.min.js'; ?>
+    </script>
+	
+
+
+	
 </head>
 
 <body>
@@ -28,7 +38,7 @@
 				  </button>
 				 
 				  <a class="navbar-brand" href="home.html">
-					<img alt="Brand" src="imagens/logo/2.png" class="img_logo">
+					<img alt="Logo" src="https://ticket-happy-mariangela.c9users.io/imagens/logo/2.png" class="img_logo">
 				  </a>
 				</div>
 
