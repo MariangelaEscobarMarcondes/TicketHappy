@@ -210,21 +210,21 @@
 				<div class="hoverzoom">				
 					<img src="https://ticket-happy-mariangela.c9users.io/imagens/aside/la_nouba.jpg" class="img-responsive" alt="">
 					<div class="retina">						
-						<a href="la_nouba.html">Saiba mais</a>
+						<a href="/home/laNouba">Saiba mais</a>
 					</div>
 				</div><br>
 				
 				<div class="hoverzoom">
 					<img src="https://ticket-happy-mariangela.c9users.io/imagens/aside/rei-leao.jpg" class="img-responsive" alt="">
 					<div class="retina">						
-						<a href="o_rei_leao.html">Saiba mais</a>
+						<a href="/home/oReiLeao">Saiba mais</a>
 					</div>
 				</div><br>
 				
 				<div class="hoverzoom">
 					<img src="https://ticket-happy-mariangela.c9users.io/imagens/aside/coldplay.jpg"  class="img-responsive" alt="">
 					<div class="retina">						
-						<a href="Coldplay.html">Saiba mais</a>
+						<a href="/home/coldplay">Saiba mais</a>
 					</div>
 				</div><br>						
 								
