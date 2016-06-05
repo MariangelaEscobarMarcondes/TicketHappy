@@ -29,7 +29,11 @@
 				<li><a href="/home/home">Home</a></li>
 				<li><a href="#">Teatro</a></li>
 				<li class="active">Musical</li>			
-			</ol>		
+			</ol>	
+			
+			<p style="color:#FFFF99">Bem Vindo:  <?= $dado["nome"] ?></p>
+			<p style="display:none">Id:     <?= $dado["id"] ?></p>
+					
 		<!-- breadcrumb --> 
 		
 		<div class="row">
