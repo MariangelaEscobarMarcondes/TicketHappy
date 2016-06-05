@@ -1,5 +1,4 @@
 <?php
-
 class ContatoController extends Controller{
     
     public function __call($m,$a){
@@ -52,7 +51,9 @@ class ContatoController extends Controller{
         
         $todosContatos = $contatoDao->getContatos();
         
+        $this->view->renderizar("header");
         $this->view->interpolar("listar_contato",$todosContatos);
+        $this->view->renderizar("footer");
     }
     
     // https://ticket-happy-mariangela.c9users.io/contato/listar
@@ -124,8 +125,5 @@ class ContatoController extends Controller{
    
     
 }
-
-
-
 ?>
 
