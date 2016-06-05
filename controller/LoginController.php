@@ -7,17 +7,37 @@ class LoginController extends Controller{
     }
     
     public function logout(){
+        
+         $id = $_SESSION["_ID"];
+        
+        //PEGANDO DADOS DO MODEL
+        $loginDao = new LoginDAO();
+        $usuario = $loginDao->getUsuario($id);
+        // -----------------------------
+        
+        // MANDANDO PARA VIEW
+        $dado["id"] = $usuario->getId();
+        $dado["nome"] = $usuario->getNome();
+        
+        $this->view->renderizar("header");
+        $this->view->interpolar("logout",$dado);
+        $this->view->renderizar("footer");
+        
+        
+        
         $this->estaAutorizado();
         //apagar a sessao
         unset($_SESSION["_ID"]);
-        $this->view->renderizar("logout");
+        //$this->view->renderizar("header");
+       // $this->view->renderizar("logout");
+       // $this->view->renderizar("footer");
     }
     // https://ticket-happy-mariangela.c9users.io/login/logout
     
     
     public function formulario(){
         //apagar a sessao
-        unset($_SESSION["_ID"]);
+        //unset($_SESSION["_ID"]);
         
         $this->view->renderizar("header");
         $this->view->renderizar("login");
