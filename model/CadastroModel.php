@@ -7,7 +7,7 @@ class CadastroModel{
             $nome, 
             $email,
             $cpf,
-            $dt_nasc, 
+            $dataNascimento, 
             $telefone,
             $celular, 
             $sexo, 
@@ -19,10 +19,9 @@ class CadastroModel{
             $estado,
             $cep,
             $senha;
-            
                                    
     
-    public function __construct($id, $nome, $email, $cpf, $dt_nasc, $telefone,
+    public function __construct($id, $nome, $email, $cpf, $dataNascimento, $telefone,
                                 $celular, $sexo, $endereco, $numero, $apartamento,
                                 $bairro, $cidade, $estado, $cep, $senha)
     {
@@ -30,7 +29,7 @@ class CadastroModel{
         $this->nome         = $nome;
         $this->email        = $email;
         $this->cpf          = $cpf;
-        $this->dataNasc     = $dt_nasc;
+        $this->dataNasc     = $dataNascimento;
         $this->telefone     = $telefone;
         $this->celular      = $celular;
         $this->sexo         = $sexo;
@@ -104,7 +103,7 @@ class CadastroModel{
         return $this->cep;
     }
     
-    public function getSenha){
+    public function getSenha(){
         return $this->senha;
     }
    
