@@ -55,7 +55,7 @@ $clazz = $_GET["classe"];
 $r = new App($met,$clazz);
 $r->startApp();
 
-// https://mvc-dinorachristovam.c9users.io/home/ola
+
 
 //home -> HomeController
 // ola -> metodo ola() do HomeController
