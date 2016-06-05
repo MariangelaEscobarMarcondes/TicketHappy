@@ -17,7 +17,10 @@ class App{
         
         if($modelName == "HomeModel" || $modelName == "EspeciaisModel" || $modelName == "ExposicoesModel" || $modelName == "FestivaisModel" ||
            $modelName == "orquestraEdancaModel" || $modelName == "internacionalModel" || $modelName == "nacionalModel" || 
-           $modelName == "comediaModel" || $modelName == "infantilModel" || $modelName == "musicalModel"){
+           $modelName == "comediaModel" || $modelName == "infantilModel" || $modelName == "musicalModel" || $modelName == "logadoModel"){
+               
+               require_once "model/LoginDAO.php";
+                require_once "model/LoginModel.php";
             
         }elseif($modelName == "LoginModel"){
             require_once "model/UsuarioModel.php";
