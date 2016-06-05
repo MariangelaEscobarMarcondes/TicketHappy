@@ -3,7 +3,7 @@
 <head>
 	<meta charset="utf-8">
 	<title>Ticket Happy</title>
-	<link rel="shortcut icon" href="imagens/logo/favicon.ico" >
+	<link rel="shortcut icon" href="https://ticket-happy-mariangela.c9users.io/imagens/logo/favicon.ico" >
 	
 	<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
 	<script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
@@ -70,9 +70,21 @@
 						
 					</ul>
 				  
-				   <!-- LOGIN -->	
+				   <!-- LOGIN -->
+				   <!--
 				  <ul class="nav navbar-nav navbar-right teste2">
 					<li><a href="/login/formulario"><span class="glyphicon glyphicon-user"></span> Login</a></li>					
+				  </ul>
+				  -->
+				   <ul class="nav navbar-nav navbar-right teste2">
+					  <li class="dropdown">
+						  <a href="#" class="dropdown-toggle" data-toggle="dropdown"><span class="glyphicon glyphicon-triangle-bottom"></span> Usuario</a>
+						  <ul class="dropdown-menu" role="menu">
+						  	<li><a href="/login/formulario"><span class="glyphicon glyphicon-user"></span> Login</a></li>
+							<li><a href="/login/logout"><span  class="glyphicon glyphicon-off"></span> Sair</a></li>
+						
+						  </ul>
+						</li>
 				  </ul>
 				  
 				  <!-- FORM => SEARCH -->
