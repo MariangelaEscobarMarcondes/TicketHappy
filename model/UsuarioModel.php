@@ -2,13 +2,11 @@
 
 class UsuarioModel{
     //campos da tabela cadastro
-    private $id, $nome, $login, $senha;
+    private $id, $nome;
     
-    public function __construct($id, $nome, $login, $senha){
+    public function __construct($id, $nome){
         $this->id = $id;
         $this->nome = $nome;
-        $this->login = $login;
-        $this->senha = $senha;
     }
     
     public function getId(){
@@ -19,13 +17,7 @@ class UsuarioModel{
         return $this->nome;
     }
     
-    public function getLogin(){
-        return $this->login;
-    }
-    
-    public function getSenha(){
-        return $this->senha;
-    }
+   
     
     
     

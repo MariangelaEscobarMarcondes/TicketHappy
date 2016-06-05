@@ -1,5 +1,4 @@
 <?php
-
 class HomeController extends Controller{
     
     public function __call($m,$a){
@@ -91,7 +90,4 @@ class HomeController extends Controller{
    
     
 }
-
 ?>
-
-

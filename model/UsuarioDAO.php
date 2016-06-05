@@ -4,8 +4,12 @@
 //para entrar no mysql
 // https://ticket-happy-mariangela.c9users.io/phpmyadmin/
 //  Username: mariangela
-
-
+/*
+    $dbc = mysqli_connect("127.0.0.1", "mariangela", "", "ticketHappy") or die('erro ao conectar');
+    $query = "insert into cadastro(nome, login, senha) values ('$nome','$login', '$senha')";
+    $data = mysqli_query($dbc, $query) or die ('erro ao submeter ao banco de dados');
+    mysqli_close($dbc);
+    */
 class UsuarioDAO{
                           //nome da classe Model
     public function insert(UsuarioModel $u){
