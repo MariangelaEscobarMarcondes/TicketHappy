@@ -6,7 +6,7 @@
 		<!-- BREADCRUMB  --> 
 		<ol class="breadcrumb">
 			<li><a href="home.html">Home</a></li>
-			<li class="active">Inserido com sucesso</li>				
+			<li class="active">Logado com sucesso</li>				
 		</ol>
 		<!-- BREADCRUMB --> 
 		<p style="color:#FFFF99">Bem Vindo:  <?= $dado["nome"] ?></p>
@@ -18,8 +18,7 @@
 		
 		<!-- MAIN -->
 		<main id="largura_contato_form">
-			<h1>Logado com sucesso !!!</h1>
-			<br><br>
+		
 			
 			
           

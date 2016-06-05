@@ -51,14 +51,16 @@
 			
 			<div class="div_transparente_video">
 				<button type="button" class="btn btn-laranja" data-toggle="modal" data-target=".bs-example-modal-lg"><span class="glyphicon glyphicon-facetime-video"></span>  Video</button>
+			
 				<a href="compra_rei_leao.html" class="btn btn-laranja" role="button"><span class="glyphicon glyphicon-shopping-cart" aria-hidden="true"></span> Comprar</a>
+			
 				<div class="modal fade bs-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
 				<div class="modal fade bs-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
 				  <div class="modal-dialog modal-lg">
 					<div class="">					
 							<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>						
 							<div class="imagem_video">
-								<video id="video" src="videos/rei_leao.mp4" controls loop muted preload="auto" poster="imagens/1-teatro/Infantil/1.jpg"></video> 	
+								<video id="video" src="https://www.youtube.com/watch?v=3Pn_7DzOR6c" controls loop muted preload="auto" poster="https://ticket-happy-mariangela.c9users.io/imagens/1-teatro/Infantil/1.jpg"></video> 	
 							</div>				
 					</div>
 				  </div>

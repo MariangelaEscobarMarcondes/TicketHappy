@@ -89,7 +89,7 @@
 				<p class="texto_centralizado">São Paulo - SP</p>
 				<p>
 					<a href="compra_rei_leao.html" class="btn btn-laranja" role="button"><span class="glyphicon glyphicon-shopping-cart" aria-hidden="true"></span> Comprar</a>
-					<a href="o_rei_leao.html" class="btn btn-saiba-mais" role="button"><span class="glyphicon glyphicon-info-sign" aria-hidden="true"></span> Saiba +</a>
+					<a href="/home/oReiLeao" class="btn btn-saiba-mais" role="button"><span class="glyphicon glyphicon-info-sign" aria-hidden="true"></span> Saiba +</a>
 				</p>
 			  </div>
 			</div>

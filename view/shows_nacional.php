@@ -79,8 +79,8 @@
 				<p class="texto_centralizado">Centro Cultural Banco do Brasil</p>
 				<p class="texto_centralizado">Rio de Janeiro – RJ</p>	
 				<p>
-					<a href="compra_teatro.html" class="btn btn-laranja" role="button"><span class="glyphicon glyphicon-shopping-cart" aria-hidden="true"></span> Comprar</a>
-					<a href="teatro_magico.html" class="btn btn-saiba-mais" role="button"><span class="glyphicon glyphicon-info-sign" aria-hidden="true"></span> Saiba +</a>
+					<a href="/compra/compraTeatroMagico" class="btn btn-laranja" role="button"><span class="glyphicon glyphicon-shopping-cart" aria-hidden="true"></span> Comprar</a>
+					<a href="/home/teatroMagico" class="btn btn-saiba-mais" role="button"><span class="glyphicon glyphicon-info-sign" aria-hidden="true"></span> Saiba +</a>
 				</p>
 			  </div>
 			</div>

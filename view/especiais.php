@@ -34,7 +34,7 @@
 					<p class="texto_centralizado">Brasilia</p>					
 					<p>
 						<a href="compra_la_nouba.html" class="btn btn-laranja" role="button"><span class="glyphicon glyphicon-shopping-cart" aria-hidden="true"></span> Comprar</a> 
-						<a href="la_nouba.html" class="btn btn-saiba-mais" role="button"><span class="glyphicon glyphicon-info-sign" aria-hidden="true"></span> Saiba +</a>
+						<a href="/home/laNouba" class="btn btn-saiba-mais" role="button"><span class="glyphicon glyphicon-info-sign" aria-hidden="true"></span> Saiba +</a>
 					</p>
 				  </div>
 				</div>
@@ -125,7 +125,7 @@
 							<h4 class="modal-title" id="myModalLabel"><span class="glyphicon glyphicon-wrench"></span>  Ops...</h4>
 						  </div>
 						  <div class="modal-body">
-							<img src="ihttps://ticket-happy-mariangela.c9users.io/imagens/pagina_em_construcao.png" alt="" class="img-responsive">
+							<img src="https://ticket-happy-mariangela.c9users.io/imagens/pagina_em_construcao.png" alt="" class="img-responsive">
 						  </div>
 						  <div class="modal-footer">
 							<button type="button" class="btn btn-laranja" data-dismiss="modal">Close</button>					

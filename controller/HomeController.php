@@ -83,6 +83,12 @@ class HomeController extends Controller{
         $this->view->renderizar('footer');
     }
     
+    public function teatroMagico(){
+        $this->view->renderizar("header");
+        $this->view->renderizar("teatro_magico");
+        $this->view->renderizar('footer');
+    }
+    
     
     
     

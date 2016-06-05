@@ -16,7 +16,7 @@
 			<ol class="breadcrumb">
 				<li><a href="/home/home">Home</a></li>
 				<li><a href="#">Shows</a></li>
-				<li class="/home/internacional">Internacional</li>		
+				<li class="active">Internacional</li>		
 			</ol>
 		
 		<!------------------------------------------------------------------------------------>		
@@ -32,7 +32,7 @@
 				<p class="texto_centralizado">São Paulo - SP</p>				
 				<p>
 					<a href="compra_coldplay.html" class="btn btn-laranja" role="button"><span class="glyphicon glyphicon-shopping-cart" aria-hidden="true"></span> Comprar</a> 
-					<a href="Coldplay.html" class="btn btn-saiba-mais" role="button"><span class="glyphicon glyphicon-info-sign" aria-hidden="true"></span> Saiba +</a>
+					<a href="/home/coldplay" class="btn btn-saiba-mais" role="button"><span class="glyphicon glyphicon-info-sign" aria-hidden="true"></span> Saiba +</a>
 				</p>
 			  </div>
 			</div>
@@ -123,7 +123,7 @@
 							<h4 class="modal-title" id="myModalLabel"><span class="glyphicon glyphicon-wrench"></span>  Ops...</h4>
 						  </div>
 						  <div class="modal-body">
-							<img src="ihttps://ticket-happy-mariangela.c9users.io/imagens/pagina_em_construcao.png" alt="" class="img-responsive">
+							<img src="https://ticket-happy-mariangela.c9users.io/imagens/pagina_em_construcao.png" alt="" class="img-responsive">
 						  </div>
 						  <div class="modal-footer">
 							<button type="button" class="btn btn-laranja" data-dismiss="modal">Close</button>					
