@@ -7,10 +7,10 @@ class View{
         require_once $pagina . ".php"; // vai cola a pag (ola.php)
     }
     
+    
     public function interpolar($pagina,$dado){
-        require_once $pagina . ".php" . "DADO: " . $dado;
+        require_once $pagina . ".php";
     }
-   
     
     
 }
