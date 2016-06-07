@@ -325,6 +325,29 @@ class HomeController extends Controller{
         */
     }
     
+    public function ladoDosCisnes(){
+         $id = $_SESSION["_ID"];
+        
+        //PEGANDO DADOS DO MODEL
+        $loginDao = new LoginDAO();
+        $usuario = $loginDao->getUsuario($id);
+        // -----------------------------
+        
+        // MANDANDO PARA VIEW
+        $dado["id"] = $usuario->getId();
+        $dado["nome"] = $usuario->getNome();
+        
+        $this->view->renderizar("header");
+        $this->view->interpolar("lago_dos_cisnes",$dado);
+        $this->view->renderizar("footer");
+        
+        /*
+        $this->view->renderizar("header");
+        $this->view->renderizar("teatro_magico");
+        $this->view->renderizar('footer');
+        */
+    }
+    
     
     
     
