@@ -10,10 +10,9 @@ class EventoDAO{
             return "Falha no MySQL: (" . $mysqli->connect_errno . ") " . $mysqli->connect_error;
         }
         
-        $stmt = $mysqli->prepare("INSERT INTO eventos(nm_evento,nm_local,nm_cidade,nm_categoria,ds_texto,ds_data,ds_horario,ds_preco,ds_onde,imagem,ds_imagemFundo) VALUES (?,?,?,?,?,?,?,?,?,?,?)");
-        
-        //Mudar aqui de acordo com a aula de seguranca
-        $stmt->bind_param("sssssssssss",$e->getEvento(),$e->getLocal(),$e->getCidade(),$e->getCategoria,$e->getTexto,$e->getData,$e->getHorario,$e->getPreco,$e->getOnde,$e->getImagem,$e->getImagemFundo);
+        $stmt = $mysqli->prepare("INSERT INTO Eventos(nm_evento,vl_ingresso,qt_totalIngresso, ds_categoria) VALUES (?,?,?,?)");
+       
+        $stmt->bind_param("sdis",$e->getEvento(),$e->getValor(),$e->getQuantidade(), $e->getCategoria());
         
         //----------------------------------------------
         if (!$stmt->execute()) {
@@ -23,41 +22,27 @@ class EventoDAO{
         return "";
     }
     
-    public function getEvento($id){
+   
+    public function getEventos(){
         $mysqli = new mysqli("127.0.0.1", "mariangela", "", "ticketHappy");
         
-        $stmt = $mysqli->prepare("SELECT * FROM eventos WHERE id=?");
-        
-        $stmt->bind_param("i",$id);
+        $stmt = $mysqli->prepare("SELECT * FROM Eventos");
         $stmt->execute();
-        $stmt->bind_result($id, $evento, $local, $cidade, $categoria, $texto, $data, $horario, $preco, $onde, $imagem, $imagemFundo);
-        $stmt->fetch();
         
-        $evento = new EventoModel($id, $evento, $local, $cidade, $categoria, $texto, $data, $horario, $preco, $onde, $imagem, $imagemFundo);
-        return $evento;
+        $arr = mysqli_fetch_all(mysqli_stmt_get_result($stmt));
+        
+        $eventos = array();
+        
+        foreach($arr as $a){
+            $eventos[] = new EventoModel($a[0],$a[1],$a[2],$a[3],$a[4]);
+        }
+        return $eventos;
     }
     
-    
-    public function updateEvento($id){
-        
-        $mysqli = new mysqli("127.0.0.1", "mariangela", "", "ticketHappy");
-        
-        $stmt = $mysqli->prepare("PUT INTO eventos(nm_evento,nm_local,nm_cidade,nm_categoria) VALUES (?,?,?,?)");
-        
-        $stmt->bind_param("i",$id);
-        $stmt->execute();
-        $stmt->bind_result($id, $evento, $local, $cidade, $categoria, $texto, $data, $horario, $preco, $onde, $imagem, $imagemFundo);
-        $stmt->fetch();
-        
-        $evento = new EventoModel($id, $evento, $local, $cidade, $categoria, $texto, $data, $horario, $preco, $onde, $imagem, $imagemFundo);
-        return $evento;
-    }
-
-
     public function deleteEvento($id){
         $mysqli = new mysqli("127.0.0.1", "mariangela", "", "ticketHappy");
         
-        $stmt = $mysqli->prepare("DELETE * FROM eventos WHERE id=?");
+        $stmt = $mysqli->prepare("DELETE FROM Eventos WHERE id_evento=?");
         
         $stmt->bind_param("i",$id);
         
@@ -66,23 +51,48 @@ class EventoDAO{
         }
         $stmt->close();
     }
-
-
-    public function getAllEvento($id){
+    
+    public function getEvento($id){
         $mysqli = new mysqli("127.0.0.1", "mariangela", "", "ticketHappy");
         
-        $stmt = $mysqli->prepare("SELECT * FROM eventos");
+        $stmt = $mysqli->prepare("SELECT * FROM Eventos WHERE id_evento=?");
         
-        $stmt->bind_param("i",$_POST["id"]);
+        $stmt->bind_param("i",$id);
         $stmt->execute();
+        $stmt->bind_result($id, $evento, $valor, $quantidade, $categoria);
         $stmt->fetch();
         
-        $row = $stmt->get_result()->fetch_all();//pega todos os resultados e joga num vetor
-        foreach($row as $Evento){
-            return $e[1];
-        }
+        $evento = new EventoModel($id, $evento, $valor, $quantidade, $categoria);
+        return $evento;
     }
+    
+    public function updateEvento(EventoModel $e){
         
+        $mysqli = new mysqli("127.0.0.1", "mariangela", "", "ticketHappy");
+      
+        $stmt = $mysqli->prepare("UPDATE Eventos SET nm_evento = ?,
+                                                      vl_ingresso = ?,
+                                                      qt_totalIngresso = ?,
+                                                      ds_categoria = ?
+                                                      WHERE id_evento =?");
+        
+        $stmt->bind_param("sdisi",$e->getEvento(),$e->getValor(),$e->getQuantidade(), $e->getCategoria(), $e->getId());
+       
+       
+       if (!$stmt->execute()) {
+            echo "Erro: (" . $stmt->errno . ") " . $stmt->error . "<br>";
+        }
+        $stmt->close();
+    }
+    
+ 
+   
+    
+    
+    
+   
+   
+
    
  
     
