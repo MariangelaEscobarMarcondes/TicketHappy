@@ -79,7 +79,7 @@
 		
 		<!-- ASIDE -->
 		<div id="aside_contato">
-			<img src="imagens/login.png" alt="" class="img_login img-responsive">			
+					
 		</div>
 		<!-- ASIDE -->
 		
