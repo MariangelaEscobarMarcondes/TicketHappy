@@ -95,12 +95,12 @@
 				<div class="form-group">
 					<label for="senha" class="col-sm-2 control-label color_label">Senha</label>
 					<div class="col-sm-4">
-						<input type="password" class="form-control" id="senha" name="senha" placeholder="Password" required>
+						<input type="password" class="form-control" id="senha" name="senha" maxlength="8" placeholder="Password" required>
 					</div>
 					
 					<label for="confirmasenha" class="col-sm-2 control-label color_label">Cofirmar Senha</label>
 					<div class="col-sm-4">
-						<input type="password" class="form-control" id="confirmasenha" placeholder="Password" required>
+						<input type="password" class="form-control" id="confirmasenha" maxlength="8" placeholder="Password" required>
 					</div>
 				</div>				
 				
