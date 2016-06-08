@@ -83,27 +83,7 @@ class ContatoDAO{
             echo "Erro: (" . $stmt->errno . ") " . $stmt->error . "<br>";
         }
         $stmt->close();
-        
-        /*
-        $stmt->bind_result($id, $nomeCompleto, $email, $assunto, $mensagem);
-        $stmt->fetch();
-        
-        $contato = new ContatoModel($id, $nomeCompleto, $email, $assunto, $mensagem);
-        return $contato;
-        */
-        
-        /*
-        $stmt = $mysqli->prepare("UPDATE movies SET filmName = ?,    filmDescription = ?,    filmImage = ?,     filmPrice = ?,     filmReview = ?    WHERE filmID = ?");
-$stmt->bind_param('sssdii',
-   $_POST['filmName'],
-   $_POST['filmDescription'],
-   $_POST['filmImage'],
-   $_POST['filmPrice'], 
-   $_POST['filmReview'],
-   $_POST['filmID']);
-$stmt->execute(); 
-$stmt->close();
-*/
+ 
     }
     
     
