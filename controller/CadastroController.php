@@ -11,7 +11,7 @@ class CadastroController extends Controller{
         $this->view->renderizar("cadastro");
         $this->view->renderizar("footer");
     }
-    // chama o formulario de login (login.php)
+    
     // https://ticket-happy-mariangela.c9users.io/cadastro/cadastro 
     
     //esta fazendo um redirect
@@ -58,7 +58,7 @@ class CadastroController extends Controller{
         } 
     }
     
-     public function listar(){
+    public function listar(){
         
         $cadastroDao = new CadastroDAO();
         
