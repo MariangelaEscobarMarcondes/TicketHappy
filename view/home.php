@@ -110,7 +110,7 @@
 							<p class="texto_centralizado">Ballet</p>								
 							<p>
 								<a href="compra_lago.html" class="btn btn-laranja" role="button"><span class="glyphicon glyphicon-shopping-cart" aria-hidden="true"></span> Comprar</a> 
-								<a href="lago_dos_cisnes.html" class="btn btn-saiba-mais" role="button"><span class="glyphicon glyphicon-info-sign" aria-hidden="true"></span> Saiba +</a>
+								<a href="/home/ladoDosCisnes" class="btn btn-saiba-mais" role="button"><span class="glyphicon glyphicon-info-sign" aria-hidden="true"></span> Saiba +</a>
 							</p>
 						  </div>
 						</div>
