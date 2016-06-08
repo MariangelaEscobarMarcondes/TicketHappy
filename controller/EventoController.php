@@ -54,9 +54,20 @@ class EventoController extends Controller{
         $this->view->renderizar("header");
         $this->view->interpolar("listar_eventos",$todosEventos);
         $this->view->renderizar("footer");
+        
     }
     
-    // https://ticket-happy-mariangela.c9users.io/eventos/listar
+    public function Carrinho(){
+        
+        $eventoDao = new EventoDAO();
+        
+        $todosEventos = $eventoDao->getEventos();
+        
+        $this->view->renderizar("header");
+        $this->view->interpolar("compra1",$todosEventos);
+        $this->view->renderizar("footer");
+    // https://ticket-happy-mariangela.c9users.io/evento/carrinho
+    }
     
     // carrega os campos na pagina contatoAlterar.php
     public function alterar(){
