@@ -25,8 +25,6 @@ class CadastroDAO{
         ];
         
         $hash =  password_hash($c->getSenha(), PASSWORD_BCRYPT, $options);
-       
-       
       
        
        $cep = preg_replace("/[^0-9]/","", $c->getCep());
