@@ -1,5 +1,4 @@
 <?php
-
 class PagamentoController extends Controller{
     
     public function __call($m,$a){
@@ -24,16 +23,16 @@ class PagamentoController extends Controller{
     public function inserir(){
         
         //Obtem da view
-        $credito               = $_POST["credito"];
-        $nome_titular          = $_POST["nome_titular"];
-        $validade              = $_POST["validade"];
-        $seguranca             = $_POST["seguranca"];
-        $bandeira              = $_POST["bandeira"];
+        $credito                  = $_POST["cd_credito"];
+        $titular                  = $_POST["nm_titular"];
+        $validade                 = $_POST["dt_validade"];
+        $seguranca                = $_POST["cd_seguranca"];
+        $bandeira                 = $_POST["ds_bandeira"];
         
         
         
         //passa para o EventoModel
-        $pagamento = new PagamentoModel(0,  $credito, $nome_titular, $validade, $seguranca, $bandeira);
+        $pagamento = new PagamentoModel(0,  $credito, $titular, $validade, $seguranca, $bandeira);
         $pagamentoDao = new PagamentoDAO();
         
         //PASSA AO DAO
@@ -46,7 +45,7 @@ class PagamentoController extends Controller{
         } 
     }
     // chama o controller eventoController e o formulario ==> vai chamar essa funcao quando clicar no botao
-    // https://ticket-happy-mariangela.c9users.io/pagamento/inserir  
+    // https://ticket-happy-mariangela.c9users.io/carrinho/inserir  
     
     
      public function listar(){

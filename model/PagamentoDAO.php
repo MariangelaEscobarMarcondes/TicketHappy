@@ -1,5 +1,4 @@
 <?php
-
 class PagamentoDAO{
                           //nome da classe Model
     public function insert(PagamentoModel $f){
@@ -10,9 +9,8 @@ class PagamentoDAO{
             return "Falha no MySQL: (" . $mysqli->connect_errno . ") " . $mysqli->connect_error;
         }
         
-        $stmt = $mysqli->prepare("INSERT INTO pagamento(credito, nome_titular, validade, seguranca, bandeira) VALUES (?,?,?,?,?)");
+        $stmt = $mysqli->prepare("INSERT INTO pagamento(cd_credito, nm_titular, dt_validade, cd_seguranca, ds_bandeira) VALUES (?,?,?,?,?)");
         
-
         $stmt->bind_param("isiis",$f->getCredito(),$f->getNome_titular(), $f->getValidade(), $f->getSeguranca(), $f->getBandeira());
         
         //----------------------------------------------
@@ -63,14 +61,13 @@ class PagamentoDAO{
         
         $stmt->bind_param("i",$id);
         $stmt->execute();
-        $stmt->bind_result($id, $credito, $nome_titular, $validade, $seguranca, $bandeira);
+        $stmt->bind_result($id, $credito, $titular, $validade, $seguranca, $bandeira);
         $stmt->fetch();
         
-        $pagamento = new PagamentoModel($id, $credito, $nome_titular, $validade, $seguranca, $bandeira);
+        $pagamento = new PagamentoModel($id, $credito, $titular, $validade, $seguranca, $bandeira);
         return $pagamento;
     }
     
     //http://php.net/manual/pt_BR/mysqli-stmt.fetch.php
 }
-
 ?>

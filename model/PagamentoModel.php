@@ -6,7 +6,7 @@ class PagamentoModel{
     //campos da tabela pagamento
     private $id, $credito, $nome_titular, $validade, $seguranca, $bandeira;
     
-    public function __construct($id, $credito, $nome_titular, $validade, $seguranca, $bandeira){
+    public function __construct( $id, $credito, $nome_titular, $validade, $seguranca, $bandeira){
         $this->id                    = $id;
         $this->credito               = $credito;
         $this->nome_titular          = $nome_titular;
@@ -14,7 +14,7 @@ class PagamentoModel{
         $this->seguranca             = $seguranca;
         $this->bandeira              = $bandeira;
     }
-    
+
     public function getId(){
         return $this->id;
     }
