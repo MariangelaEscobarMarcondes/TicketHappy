@@ -24,8 +24,7 @@
 		<!--------------------------- BREADCRUMB  --------------------------------------> 
 		<ol class="breadcrumb">
 			<li><a href="/home/home">Home</a></li>
-			<li><a href="compra/compra">Compra</a></li>
-			<li class="active">Pagamento</li>
+			<li class="active">Carrinho de Compras</li>
 			
 			<p style="color:#FFFF99">Bem Vindo:  <?= $dado["nome"] ?></p>
 			<p style="display:none">Id:     <?= $dado["id"] ?></p>
@@ -37,6 +36,43 @@
 		
 		<!------------------------------ MAIN --------------------------------------------->
 		<main id="largura_compra">
+			
+			<table id="cart" class="table table-condensed">
+					<thead class="thead_compra">
+						<tr>
+							<th style="width:50%">Produto</th>
+							<th style="width:10%">Preço</th>
+							<th style="width:8%">Quantidade</th>
+							<th style="width:22%" class="text-center">Subtotal</th>
+							<th style="width:10%"></th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr class="tr_compra">
+							<td data-th="Produto">
+								<div class="row">
+									<div class="col-sm-10">
+										<h4 class="nomargin">Ingresso Rei Leão - o musical</h4>
+									</div>
+								</div>
+							</td>
+							
+						  <td data-th="Preco">R$ 100,00</td>
+							<td data-th="Quantidade">
+								<input type="number" class="form-control text-center" value="1">
+							</td>	
+						  <td data-th="Subtotal" class="text-center">R$ 100,00</td>
+							<td class="actions" data-th="">
+								<button class="btn btn-laranja btn-sm"><i class="fa fa-refresh"></i></i><span class="glyphicon glyphicon-refresh"></button>
+								<button class="btn btn-laranja btn-sm"><i class="fa fa-trash-o"></i><span class="glyphicon glyphicon-trash"></span></button>								
+							</td>
+						</tr>
+					</tbody>
+						<tfoot>
+						<tr>
+							<td><a href="home.html" class="btn btn-laranja btn-warning"><i class="fa fa-angle-left"></i> Continuar Comprando</a></td>
+					</tfoot>
+				</table>		
 		
 				<h2>Resumo da Compra</h2>
 			
@@ -60,33 +96,33 @@
 						<div class="form-group">
 							<br>
 							
-							<label for="cc-num credito" class="col-sm-2 control-label color_label">Número do cartão de crédito <small class="text-muted"><span class="cc-brand"></span></small></label>
+							<label for="cc-num cd_credito" class="col-sm-2 control-label color_label">Número do cartão de crédito <small class="text-muted"><span class="cc-brand"></span></small></label>
 							<div class="col-sm-5">
-								<input type="tex" name="credito" id="credito" class="input-lg form-control cc-number"  autocomplete="cc-number" placeholder="•••• •••• •••• ••••" required>
+								<input type="tex" name="cd_credito" id="cd_credito" class="input-lg form-control cc-number"  autocomplete="cc-number" placeholder="•••• •••• •••• ••••" required>
 							</div>
 
-							<label for="cc-exp validade" class="col-sm-1 control-label color_label">Validade</label>					
+							<label for="cc-exp dt_validade" class="col-sm-1 control-label color_label">Validade</label>					
 							<div class="col-sm-3">
-								<input type="tel" name="validade" id="validade" class="input-lg form-control cc-exp" autocomplete="cc-exp" placeholder="•• / ••••" required>
+								<input type="tel" name="dt_validade" id="dt_validade" class="input-lg form-control cc-exp" autocomplete="cc-exp" placeholder="•• / ••••" required>
 							</div>				
 						</div>		
 				
 						<div class="form-group">
-							<label for="nome_titular" class="col-sm-2 control-label color_label">Nome do tiular do cartão</label>
+							<label for="nm_titular" class="col-sm-2 control-label color_label">Nome do tiular do cartão</label>
 							<div class="col-sm-4">
-								<input type="text" name="nome_titular" id="nome_titular" class="form-control" placeholder="Nome">
+								<input type="text" name="nm_titular" id="nm_titular" class="form-control" placeholder="Nome">
 							</div>	
 						
-							<label for="cc-cvc seguranca" class="col-sm-2 control-label color_label">Código de segurança</label>
+							<label for="cc-cvc cd_seguranca" class="col-sm-2 control-label color_label">Código de segurança</label>
 							<div class="col-sm-3">
-								<input type="tel" name="seguranca" id="seguranca" class="input-lg form-control cc-cvc" autocomplete="off" placeholder="•••" required>
+								<input type="tel" name="cd_seguranca" id="cd_seguranca" class="input-lg form-control cc-cvc" autocomplete="off" placeholder="•••" required>
 							</div>						
 						</div>					  			
 				
 						<div class="form-group">
-							<label for="bandeira" class="col-sm-2 control-label color_label">Bandeiras</label>
+							<label for="ds_bandeira" class="col-sm-2 control-label color_label">Bandeiras</label>
 							<div class="col-sm-2">
-								<select name="bandeira" class="form-control">
+								<select name="ds_bandeira" class="form-control">
 									<option value="Visa">Visa</option>
 									<option value="Master Card">Master Card</option>													  				 
 								</select>
